@@ -1,0 +1,356 @@
+//@palleteColor1: #092120;//dark teal
+
+@palleteColor1: #0E3330;
+@palleteColor2: #F7FCFD;//white
+@palleteColor3: #E5E5E5;//grey
+@palleteColor4: #3E4949;//light teal 
+@palleteColor5: black;//darker teal
+
+.PanelBase(@color, @contentColor, @secondaryContentColor, @borderColor){
+    background-color: @color; 
+    color: @contentColor;
+    
+    .secondary{
+        color: @secondaryContentColor;
+    }
+}
+
+.Panel01(){
+    .PanelBase(fadeout(@palleteColor1, 30%), @palleteColor2, @palleteColor2, @palleteColor1);
+}
+
+.Panel02(){
+    .PanelBase(@palleteColor1, white, white, @palleteColor1);
+}
+ 
+.Panel03(){
+    .PanelBase(@palleteColor1, black, black, black);
+}
+
+.Panel04(){
+    .PanelBase(@palleteColor3, @palleteColor4, @palleteColor1, @palleteColor1);
+}
+
+@layoutUnit1: 8rem;
+@layoutUnit2: 4rem;
+@layoutUnit3: 2rem;
+@layoutUnit4: 1rem;
+@layoutUnit5: 0.5rem;
+
+@layoutUnitStandard: @layoutUnit3;
+
+@stretchUnitStandard: 2%;
+
+.f1(){
+    font-size: 2rem;
+    @media (max-width: 640px), (max-device-width: 640px){
+         font-size: 4rem;
+    }
+}
+.f2(){
+    font-size: 1.5rem;
+      @media (max-width: 640px), (max-device-width: 640px){
+         font-size: 2.5rem;
+    }
+}
+.f3(){
+    font-size: 1rem;
+      @media (max-width: 640px), (max-device-width: 640px){
+         font-size: 1.5rem;
+    }
+}
+.f4(){
+    font-size: 1rem;
+      @media (max-width: 640px), (max-device-width: 640px){
+         font-size: 1.5rem;
+    }
+}
+.grid(@width, @total, @margin:0%){
+    box-sizing: border-box;
+    width: (@width / @total) * 100% - (@margin);
+}
+
+.aspect-ratio(@width, @height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: (@height / @width) * 100%;
+  }
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+body{
+    background-color: @palleteColor1;
+    color:  @palleteColor2;
+    
+    font-family: 'Droid Sans', sans-serif;
+    background-color: @palleteColor1;
+    
+    > header{
+        
+        text-shadow: 0.2rem 0rem @palleteColor1;
+        text-align: center;
+        height: 20em;
+        max-width: 70em;
+        margin:auto;
+        position: relative;
+        
+        h1{
+            .f1();
+        }
+        
+        h2{
+            .f3();
+        }
+        
+        & > .header-table{
+            display: table;
+            margin:auto;
+            height:100%;
+            & > div{
+                display: table-cell;
+                vertical-align: middle;
+                
+            }
+        }
+        .header-bg-container{
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:-15em;
+            overflow:hidden;
+            z-index:-1;
+        }
+         .fade{
+            position: absolute;
+            height:100%;
+            width:10em;
+            top:0em;
+            z-index:-1;
+
+            &.right{
+                right:0em;
+                 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+                background: -moz-linear-gradient(right,  @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(right,  @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to left, @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1,GradientType=1 ); /* IE6-9 */
+            }
+
+            &.left{
+                left: 0em;
+
+                 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+                background: -moz-linear-gradient(left,  @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left,  @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1,GradientType=1 ); /* IE6-9 */
+            }
+
+             &.bottom{
+                bottom: 0em;
+                 height: 6em;
+                 width:100%;
+                 top: auto;
+
+                background: fadeout(@palleteColor1, 100%);
+                background: -moz-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, fadeout(@palleteColor1, 100%)), color-stop(100%, @palleteColor1));
+                background: -webkit-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                background: -o-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                background: -ms-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                background: linear-gradient(to bottom, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
+            }
+
+            &.center{
+                top:1em;
+                bottom: 1em;
+                right: 1em;
+                left: 1em;
+
+                height: auto;
+                width: auto;
+
+                background: -moz-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+                background: -webkit-gradient(radial, center center, 0px, center center, 50%, color-stop(0%, @palleteColor1), color-stop(50%, fadeout(@palleteColor1, 100%)));
+                background: -webkit-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+                background: -o-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+                background: -ms-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+                background: radial-gradient(ellipse at center, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1, GradientType=1 );  
+            }
+             
+             &.cover{
+                 background-color: fadeout(@palleteColor1, 30%);
+                 width:100%;
+                 height:100%;
+                 left:0;
+                 top:0;
+             }
+        }
+
+
+         video{    
+            position: absolute;
+            width:100%;
+            z-index:-2;
+            top: 0;
+            
+        }
+         @media (max-width: 640px), (max-device-width: 640px){
+             video{
+                 display:none;
+            }
+        }
+    }
+    > section{
+        background-color: transparent;
+        
+          background: fadeout(@palleteColor5, 100%);
+        background: -moz-linear-gradient(top, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, fadeout(@palleteColor5, 100%)), color-stop(100%, @palleteColor5));
+        background: -webkit-linear-gradient(top, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
+        background: -o-linear-gradient(top, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
+        background: -ms-linear-gradient(top, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
+        background: linear-gradient(to bottom, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
+        
+        padding: @layoutUnit2 @layoutUnitStandard @layoutUnit2 @layoutUnitStandard;
+        
+        > div{
+            border-top-right-radius: 0.1em;
+            border-top-left-radius: 0.1em;
+            overflow:hidden;
+            margin: auto;
+            max-width: 55em;
+            margin-bottom: @layoutUnit1;
+            
+            &:last-child {
+                margin-bottom: 1em;
+            }
+        }
+        
+       @media (max-width: 640px), (max-device-width: 640px){
+        
+                padding: 0em;
+        }
+    }
+    .img-minor{
+       .aspect-ratio(16, 9);
+        
+       
+    }
+     .img-major{
+         .aspect-ratio(16, 9);
+    }
+     .img-mobile{
+         .aspect-ratio(9, 16);
+    }
+     .img-epic{
+        .grid(3, 3);
+    }
+    .img-container{
+        box-sizing: border-box;
+        border: 0.2rem solid @palleteColor3;
+        .img{
+            background-size: cover;
+        }
+    }
+    .img-mini{
+        .aspect-ratio(1, 1);
+         border: 0.2rem solid @palleteColor4;
+    }
+}
+
+[class*="layout-"] [class*="section"] {
+    .Panel04();
+    padding:@layoutUnit2  @layoutUnitStandard;
+    float: left;
+
+    h1{
+        .f1();
+        text-align: center;
+        margin-bottom: @layoutUnit2;
+    }
+    .img-container{
+        .grid(1, 6, @stretchUnitStandard);
+        margin-top: @layoutUnitStandard;
+        margin-right: @stretchUnitStandard;
+        float: left;
+    }
+    
+    p{
+        .f4();
+        line-height: 1.5em;
+
+    }
+
+}
+
+.layout-1{
+    .section1{
+        .grid(1, 1);
+        float:left;
+    }
+    .img1{
+        .grid(1, 1);
+        float:left;
+    }
+    @media (max-device-width: 320px), (max-width: 320px){
+        .section1{
+            .grid(1, 1);
+        }
+    }
+/*------------------ Media Queries for mobile devices ----------------------------------------------*/
+ 
+    @media (max-width: 640px){
+      .section1{
+            .grid(1, 1);
+           .img-container{
+                .grid(1, 9, @stretchUnitStandard);
+            }
+        }
+       
+    }
+    @media (max-width: 640px), (max-device-width: 640px){
+         .section1{
+           .img-container{
+                .grid(1, 3, @stretchUnitStandard);
+            }
+        }
+    }
+}
+.layout-2{
+    .section1{
+        .grid(1, 1);
+
+    }
+    .img1{
+        .grid(1, 2);
+        float:left;
+
+    }
+    .img2{
+        .grid(1, 2);
+         float:left;
+    }
+}
+.layout-3{
+    .section1{
+        .grid(1, 1);
+    }
+    .img1, .img2, .img3{
+        .grid(1, 3);
+        float:left; 
+    }
+}
