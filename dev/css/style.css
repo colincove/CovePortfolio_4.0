@@ -4,13 +4,21 @@ body {
   font-family: 'Droid Sans', sans-serif;
   background-color: #0e3330;
 }
+@media (max-width: 640px), (max-device-width: 640px) {
+  body {
+    padding-top: 4em;
+  }
+}
 body > header {
-  text-shadow: 0.2rem 0rem #0e3330;
   text-align: center;
   height: 20em;
   max-width: 70em;
   margin: auto;
   position: relative;
+}
+body > header h1,
+body > header h2 {
+  text-shadow: 0.2rem 0rem #0e3330;
 }
 body > header h1 {
   font-size: 2rem;
@@ -126,14 +134,6 @@ body > header video {
 }
 body > section {
   background-color: transparent;
-  background: rgba(0, 0, 0, 0);
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, black));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f85032', endColorstr='#e73827', GradientType=0);
   padding: 4rem 2rem 4rem 2rem;
 }
 body > section > div {
@@ -228,6 +228,152 @@ body .img-mini .img {
   right: 0;
   bottom: 0;
 }
+body footer {
+  position: relative;
+  background-image: url(../img/coverphoto.jpg);
+  background-size: cover;
+}
+body footer > .table {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  display: table;
+  margin: auto;
+  height: 100%;
+}
+body footer > .table > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+body footer > .table .portrait {
+  position: relative;
+  width: 12em;
+  height: 12em;
+  background-image: url(../img/portrait02.jpg);
+  background-size: cover;
+  border-radius: 12em;
+  margin: auto;
+  opacity: 0;
+  transition: all 1s;
+  top: 2em;
+}
+body footer > .table .portrait.show {
+  opacity: 1;
+  top: 0em;
+}
+@media (max-width: 640px), (max-device-width: 640px) {
+  body footer > .table .portrait {
+    width: 25em;
+    height: 25em;
+    border-radius: 25em;
+  }
+}
+body footer > .table:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0em;
+  top: 0em;
+  right: 0em;
+  left: 0em;
+  background: rgba(14, 51, 48, 0);
+  background: -moz-linear-gradient(bottom, rgba(14, 51, 48, 0) 0%, #0e3330 100%);
+  background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(14, 51, 48, 0)), color-stop(100%, #0e3330));
+  background: -webkit-linear-gradient(bottom, rgba(14, 51, 48, 0) 0%, #0e3330 100%);
+  background: -o-linear-gradient(bottom, rgba(14, 51, 48, 0) 0%, #0e3330 100%);
+  background: -ms-linear-gradient(bottom, rgba(14, 51, 48, 0) 0%, #0e3330 100%);
+  background: linear-gradient(to top, rgba(14, 51, 48, 0) 0%, #0e3330 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f85032', endColorstr='#e73827', GradientType=0);
+}
+body footer > .table:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0em;
+  top: 0em;
+  right: 0em;
+  left: 0em;
+  background: rgba(14, 51, 48, 0.7);
+}
+.nav-container {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  padding: 1rem;
+  color: #f7fcfd;
+}
+.nav-container .nav-inner {
+  max-width: 55em;
+  margin: auto;
+}
+.nav-container a {
+  font-size: 1rem;
+  padding-right: 2rem;
+  color: #96b0b2;
+  text-decoration: none;
+}
+@media (max-width: 640px), (max-device-width: 640px) {
+  .nav-container a {
+    font-size: 1.5rem;
+  }
+}
+.nav-container a:active,
+.nav-container a:hover {
+  color: #f7fcfd;
+}
+.nav-container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0em;
+  right: 0em;
+  top: 0em;
+  background-color: rgba(14, 51, 48, 0.9);
+  height: 0em;
+  transition: all 0.3s ease-out;
+  z-index: -1;
+  opacity: 0.5;
+}
+.nav-container.scrolled:after {
+  height: 100%;
+  opacity: 1;
+}
+@media (max-width: 640px), (max-device-width: 640px) {
+  .nav-container {
+    margin-top: -4em;
+    padding-top: 3em;
+    text-align: center;
+  }
+  .nav-container a {
+    font-size: 2rem;
+  }
+  .nav-container:after {
+    opacity: 1;
+    height: 100%;
+  }
+}
+@media (max-width: 640px) and (max-width: 640px), (max-device-width: 640px) and (max-width: 640px), (max-width: 640px) and (max-device-width: 640px), (max-device-width: 640px) and (max-device-width: 640px) {
+  .nav-container a {
+    font-size: 4rem;
+  }
+}
+.back-btn {
+  border-radius: 0.2em;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+}
+.btn {
+  padding: 0.5rem;
+  background-color: #96b0b2;
+  color: #f7fcfd;
+  border-radius: 0.1em;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #0e3330;
+}
 [class*="layout-"] [class*="section"] {
   background-color: #e5e5e5;
   color: #3e4949;
@@ -237,15 +383,23 @@ body .img-mini .img {
 [class*="layout-"] [class*="section"] .secondary {
   color: #0e3330;
 }
-[class*="layout-"] [class*="section"] h1 {
-  font-size: 2rem;
-  text-align: center;
+[class*="layout-"] [class*="section"] header {
   margin-bottom: 4rem;
+  text-align: center;
+}
+[class*="layout-"] [class*="section"] header h1 {
+  font-size: 2rem;
 }
 @media (max-width: 640px), (max-device-width: 640px) {
-  [class*="layout-"] [class*="section"] h1 {
+  [class*="layout-"] [class*="section"] header h1 {
     font-size: 4rem;
   }
+}
+[class*="layout-"] [class*="section"] header.withBtn {
+  margin-bottom: 2rem;
+}
+[class*="layout-"] [class*="section"] header.withBtn h1 {
+  margin-bottom: 2rem;
 }
 [class*="layout-"] [class*="section"] .img-container {
   box-sizing: border-box;

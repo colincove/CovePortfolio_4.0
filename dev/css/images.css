@@ -2,31 +2,31 @@
     background-image: url(../content/fifa/fifa.jpg);
 }
 .story_01{
-    background-image: url(../content/fifa/storyboards/story_01.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_01.jpg);
 }
 .story_02{
-    background-image: url(../content/fifa/storyboards/story_02.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_02.jpg);
 }
 .story_03{
-    background-image: url(../content/fifa/storyboards/story_03.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_03.jpg);
 }
 .story_04{
-    background-image: url(../content/fifa/storyboards/story_04.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_04.jpg);
 }
 .story_05{
-    background-image: url(../content/fifa/storyboards/story_05.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_05.jpg);
 }
 .story_06{
-    background-image: url(../content/fifa/storyboards/story_06.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_06.jpg);
 }
 .story_07{
-    background-image: url(../content/fifa/storyboards/story_07.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_07.jpg);
 }
 .story_08{
-    background-image: url(../content/fifa/storyboards/story_08.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_08.jpg);
 }
 .story_09{
-    background-image: url(../content/fifa/storyboards/story_09.jpg);
+    background-image: url(../content/fifa/storyboards/thumbnails/story_09.jpg);
 }
 .homepage{
     background-image: url(../content/fifa/FUTWeb16/homepage.jpg);
@@ -44,14 +44,36 @@
     background-image: url(../content/fifa/FUTCompanion/mobilesquad.jpg);
 }
 .playersearch{
-    background-image: url(../content/fifa/FUTCompanion/playersearch.jpg);
+    background-image: url(../content/fifa/FUTCompanion/thumbnails/playersearch.jpg);
 }
 .squadlist{
-    background-image: url(../content/fifa/FUTCompanion/squadlist.jpg);
+    background-image: url(../content/fifa/FUTCompanion/thumbnails/squadlist.jpg);
 }
 .store{
-    background-image: url(../content/fifa/FUTCompanion/store.jpg);
+    background-image: url(../content/fifa/FUTCompanion/thumbnails/store.jpg);
 }
 .unassigned{
-    background-image: url(../content/fifa/FUTCompanion/unassigned.jpg);
+    background-image: url(../content/fifa/FUTCompanion/thumbnails/unassigned.jpg);
+}
+
+.chrysalis-01{
+    background-image: url(../content/chrysalis/chrysalis-01.jpg);
+}
+.chrysalis-02{
+    background-image: url(../content/chrysalis/chrysalis-02.jpg);
+}
+.chrysalis-03{
+    background-image: url(../content/chrysalis/chrysalis-03.jpg);
+}
+.chrysalis-04{
+    background-image: url(../content/chrysalis/chrysalis-04.jpg);
+}
+.chrysalis-09{
+    background-image: url(../content/chrysalis/chrysalis-09.jpg);
+}
+.chrysalis-10{
+    background-image: url(../content/chrysalis/chrysalis-10.jpg);
+}
+.chrysalis-11{
+    background-image: url(../content/chrysalis/chrysalis-11.jpg);
 }

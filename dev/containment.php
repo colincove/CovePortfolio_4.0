@@ -2,34 +2,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
-        <script src="js/jquery-1.12.2.min.js" ></script>
-        <script src="js/script.js" ></script>
-        <link rel="stylesheet" href="css/reset.css" type="text/css" >
-        <link rel="stylesheet" href="css/style.css" type="text/css" >
-        <link rel="stylesheet" href="css/images.css" type="text/css" >
- 
-        <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="lib/fancybox/jquery.fancybox.pack.js"></script>
+      <?php require "head.php"; ?>
     </head>
     <body>
-        <header>
-            <div class="header-table">
-                <div>
-                    <h1>Fifa Ultimate Team</h1>
-                    <h2>Electronic Arts</h2>
-                </div>
-            </div>
-            <div class="header-bg-container">
-                <div class="fade left"></div>
-                <div class="fade right"></div>
-                <div class="fade bottom"></div>
-                <div class="fade cover"></div>
-                <video class="header-video" src="content/fifa/FIFA.mp4" autoplay="" loop=""></video>
-            </div>
-            <div class="fade center"></div>
-        </header>
-        <section>
+        <?php require "nav.php"; ?>
+        <?php require "header.php"; ?>
+        <section class="main-section">
             <div class="layout-1">
                 <div class="section1">
                     <header>
@@ -82,6 +60,6 @@
                 <div class="img-container img-mobile img3"><a class="fancybox" rel="compapp"   href="content/fifa/FUTCompanion/mobilehome.jpg"><div class="img mobilehome"></div></a></div>
             </div>
         </section>
-        <footer></footer>
+            <?php require "footer.php"; ?>
     </body>
 </html>

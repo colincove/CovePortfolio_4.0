@@ -5,10 +5,15 @@ $(document).ready(function(e){
     .fancybox({
         padding : 0
     });
-    
+    var $portrait = $(".portrait");
+    var $footer = $("footer");
+    var $body = $("body");
+    var $navcontainer = $(".nav-container");
+    var $mainsection = $(".main-section");
     var $headerVideo = $("header video");
     var $header = $("header");
     var $headerContainer = $(".header-bg-container");
+    var $doc = $(document);
     var $window = $(window);
     
     if($headerVideo.get(0)){
@@ -19,6 +24,9 @@ $(document).ready(function(e){
 
     $window.scroll(function(e){
         $headerVideo.css("top", $window.scrollTop() / 3);
+        
+        $navcontainer.toggleClass("scrolled", $mainsection.position().top < $window.scrollTop() + $navcontainer.height()  );
+        $portrait.toggleClass("show", $window.scrollTop() + $window.height() > $doc.height() - $window.height() * 0.2);
     });
     $window.resize(resize);
     
@@ -31,5 +39,8 @@ $(document).ready(function(e){
 
         $headerVideo.css("left", -($headerVideo.width() - $headerContainer.width()) / 2);
         $headerVideo.css("top", -($headerVideo.height() - $headerContainer.height()) / 2);
+        
+        $footer.css("height", $window.height());
+        $footer.css("margin-top", $navcontainer.height());
     }
 });

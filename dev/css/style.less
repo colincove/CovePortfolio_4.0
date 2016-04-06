@@ -5,6 +5,7 @@
 @palleteColor3: #E5E5E5;//grey
 @palleteColor4: #3E4949;//light teal 
 @palleteColor5: black;//darker teal
+@palleteColor6: #96B0B2;
 
 .PanelBase(@color, @contentColor, @secondaryContentColor, @borderColor){
     background-color: @color; 
@@ -88,6 +89,9 @@
 }
 
 body{
+     @media (max-width: 640px), (max-device-width: 640px){
+         padding-top: 4em;
+    }
     background-color: @palleteColor1;
     color:  @palleteColor2;
     
@@ -95,13 +99,15 @@ body{
     background-color: @palleteColor1;
     
     > header{
-        
-        text-shadow: 0.2rem 0rem @palleteColor1;
         text-align: center;
         height: 20em;
         max-width: 70em;
         margin:auto;
         position: relative;
+        
+        h1, h2{
+            text-shadow: 0.2rem 0rem @palleteColor1;
+        }
         
         h1{
             .f1();
@@ -215,16 +221,7 @@ body{
     }
     > section{
         background-color: transparent;
-        
-          background: fadeout(@palleteColor5, 100%);
-        background: -moz-linear-gradient(top, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, fadeout(@palleteColor5, 100%)), color-stop(100%, @palleteColor5));
-        background: -webkit-linear-gradient(top, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
-        background: -o-linear-gradient(top, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
-        background: -ms-linear-gradient(top, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
-        background: linear-gradient(to bottom, fadeout(@palleteColor5, 100%) 0%, @palleteColor5 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
-        
+
         padding: @layoutUnit2 @layoutUnitStandard @layoutUnit2 @layoutUnitStandard;
         
         > div{
@@ -241,7 +238,6 @@ body{
         }
         
        @media (max-width: 640px), (max-device-width: 640px){
-        
                 padding: 0em;
         }
     }
@@ -270,6 +266,149 @@ body{
         .aspect-ratio(1, 1);
          border: 0.2rem solid @palleteColor4;
     }
+    
+    footer{
+        position:relative;
+        background-image: url(../img/coverphoto.jpg);
+        background-size:cover;
+         & > .table{
+             position:absolute;
+             z-index:1;
+             width:100%;
+             height:100%;
+            display: table;
+            margin:auto;
+            height:100%;
+            & > div{
+                display: table-cell;
+                vertical-align: middle;
+                
+            }
+    
+        .portrait{
+            position: relative;
+            width: 12em;
+            height: 12em;
+            background-image: url(../img/portrait02.jpg);
+            background-size: cover;
+            border-radius: 12em;
+            margin: auto;
+            opacity:0;
+            transition: all 1s;
+            top: 2em;
+            
+            &.show{
+                opacity: 1;
+                top:0em;
+            }
+             @media (max-width: 640px), (max-device-width: 640px){
+                width: 25em;
+                height: 25em;
+                border-radius: 25em;
+            }
+            
+        }
+        
+        &:before{
+            z-index:-1;
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0em;
+                 top:0em;
+            right:0em;
+            left:0em;
+                background: fadeout(@palleteColor1, 100%);
+                background: -moz-linear-gradient(bottom, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                background: -webkit-gradient(left bottom, left top, color-stop(0%, fadeout(@palleteColor1, 100%)), color-stop(100%, @palleteColor1));
+                background: -webkit-linear-gradient(bottom, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                background: -o-linear-gradient(bottom, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                background: -ms-linear-gradient(bottom, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                background: linear-gradient(to top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
+        }
+        &:after{
+            z-index:-1;
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0em;
+                 top:0em;
+            right:0em;
+            left:0em;
+                background: fadeout(@palleteColor1, 30%);
+        }
+    }
+    }
+
+}
+.nav-container{
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    padding: @layoutUnit4;
+    color:@palleteColor2;
+    .nav-inner{
+        max-width: 55em;
+        margin:auto;
+    }
+    a{
+        .f4();
+        padding-right: @layoutUnitStandard;
+        color: @palleteColor6;
+        text-decoration: none;
+        
+        &:active, &:hover{
+            color: @palleteColor2;
+        }
+    }
+    &:after{
+        content: "";
+        display: block;
+        position:absolute;
+        left:0em;
+        right:0em;
+        top:0em;
+        background-color: fadeout(@palleteColor1, 10%);
+        height:0em;
+        transition: all 0.30s ease-out;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    &.scrolled:after{
+        height:100%;
+         opacity: 1;
+    }
+    @media (max-width: 640px), (max-device-width: 640px){
+        a{
+            .f1();
+        }
+            margin-top: -4em;
+         padding-top: 3em;
+        text-align: center;
+        &:after{
+            opacity: 1;
+            height:100%;
+        }
+    }
+    
+}
+.back-btn{
+    border-radius: 0.2em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+}
+
+.btn{
+    padding: @layoutUnit5;
+    background-color: @palleteColor6;
+    color: @palleteColor2;
+    border-radius: 0.1em;
+    text-decoration: none;
+    
+    &:hover{
+        background-color: @palleteColor1;
+    }
 }
 
 [class*="layout-"] [class*="section"] {
@@ -277,11 +416,24 @@ body{
     padding:@layoutUnit2  @layoutUnitStandard;
     float: left;
 
-    h1{
-        .f1();
-        text-align: center;
+    header{
         margin-bottom: @layoutUnit2;
+        text-align: center;
+        
+         h1{
+            .f1();
+        }
+        
+        &.withBtn{
+            margin-bottom: @layoutUnit2 / 2;
+            h1{
+                margin-bottom: @layoutUnit2 / 2; 
+            }
+            
+        }
     }
+    
+   
     .img-container{
         .grid(1, 6, @stretchUnitStandard);
         margin-top: @layoutUnitStandard;
@@ -296,6 +448,7 @@ body{
     }
 
 }
+
 
 .layout-1{
     .section1{
@@ -329,6 +482,7 @@ body{
             }
         }
     }
+    
 }
 .layout-2{
     .section1{
