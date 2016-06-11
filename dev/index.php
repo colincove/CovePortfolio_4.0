@@ -32,7 +32,7 @@
                     </header>
                     <p>Players survive alone in a hostile environment that challenges them to stay hidden from the horrors in the darkness. Avoidance and defensive measures provided by a mysterious force of light challenge the player to free themselves from the depths. Features full audio and concept art through collaboration. </p>
                 </div>
-                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/fifa/fifa.jpg"><div class="img fifa"></div></a></div>
+                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/protoprofundum/profundum_05.jpg"><div class="img profundum_05"></div></a></div>
             </div>
              <div class="layout-1">
                 <div class="section1">
@@ -42,7 +42,7 @@
                     </header>
                     <p>Players control an alien mech that rampages through military and civilian stages collecting points and gear for upgrading their arsenal.</p>
                 </div>
-                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/fifa/fifa.jpg"><div class="img fifa"></div></a></div>
+                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/urbanwarfare/urbanwar-03.jpg"><div class="img urban-03"></div></a></div>
             </div>
              <div class="layout-1">
                 <div class="section1">
@@ -52,7 +52,7 @@
                     </header>
                     <p>A mobile app product focused on creating education and engaging material for children and their parents to enjoy together!</p>
                 </div>
-                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/fifa/fifa.jpg"><div class="img fifa"></div></a></div>
+                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/loudcrowinteractive/loudcrow-02.jpg"><div class="img loudcrow-01"></div></a></div>
             </div>
                <div class="layout-1">
                 <div class="section1">
@@ -62,7 +62,7 @@
                     </header>
                     <p>An architectural project focused on designing a usable space in the Gastown area of Vancouver. Featuring high quality renders and thoughtful design by a team of students from Simon Fraser University. </p>
                 </div>
-                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/fifa/fifa.jpg"><div class="img fifa"></div></a></div>
+                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content//designlibrary/designlib-01.jpg"><div class="img designlibrary-01"></div></a></div>
             </div>
                <div class="layout-1">
                 <div class="section1">
@@ -70,9 +70,9 @@
                         <h1>Containment</h1>
                          <a class="btn" href="containment.php">View Project</a>
                     </header>
-                    <p>Unity game Developed during the Vancouver Global Game Jam in which players assume the role of a detective attempting to isolate a contagious disease from the population!</p>
+                    <p>Flash game Developed during the Vancouver Global Game Jam in which players assume the role of a detective attempting to isolate a contagious disease from the population!</p>
                 </div>
-                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/fifa/fifa.jpg"><div class="img fifa"></div></a></div>
+                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/containment/containment-02.jpg"><div class="img containment-02"></div></a></div>
             </div>
                <div class="layout-1">
                 <div class="section1">
@@ -92,7 +92,7 @@
                     </header>
                     <p>Developed in XNA players constantly run around the game world attempting to outrun a dark cloud! </p>
                 </div>
-                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/fifa/fifa.jpg"><div class="img fifa"></div></a></div>
+                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/roundworld/roundworld-01.jpg"><div class="img roundworld-01"></div></a></div>
             </div>
                <div class="layout-1">
                 <div class="section1">
@@ -102,7 +102,7 @@
                     </header>
                     <p>An HTML / JavaScript prototype developed to mimic Super Metroid in its execution of a side scrolling combat game.  </p>
                 </div>
-                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/fifa/fifa.jpg"><div class="img fifa"></div></a></div>
+                <div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="content/protoshooter/protoshooter_03.jpg"><div class="img protoshooter_03"></div></a></div>
             </div>
         </section>
         <?php require "footer.php"; ?>

@@ -4,8 +4,10 @@
 @palleteColor2: #F7FCFD;//white
 @palleteColor3: #E5E5E5;//grey
 @palleteColor4: #3E4949;//light teal 
-@palleteColor5: black;//darker teal
+@palleteColor5: #061716;//darker teal
 @palleteColor6: #96B0B2;
+
+@textShadow:-0.1rem 0.1rem @palleteColor5;
 
 .PanelBase(@color, @contentColor, @secondaryContentColor, @borderColor){
     background-color: @color; 
@@ -32,6 +34,14 @@
     .PanelBase(@palleteColor3, @palleteColor4, @palleteColor1, @palleteColor1);
 }
 
+.flexbox(){
+	display: flex;
+}
+
+.flex(@flex){
+	flex: @flex;
+}
+
 @layoutUnit1: 8rem;
 @layoutUnit2: 4rem;
 @layoutUnit3: 2rem;
@@ -44,27 +54,15 @@
 
 .f1(){
     font-size: 2rem;
-    @media (max-width: 640px), (max-device-width: 640px){
-         font-size: 4rem;
-    }
 }
 .f2(){
     font-size: 1.5rem;
-      @media (max-width: 640px), (max-device-width: 640px){
-         font-size: 2.5rem;
-    }
 }
 .f3(){
     font-size: 1rem;
-      @media (max-width: 640px), (max-device-width: 640px){
-         font-size: 1.5rem;
-    }
 }
 .f4(){
     font-size: 1rem;
-      @media (max-width: 640px), (max-device-width: 640px){
-         font-size: 1.5rem;
-    }
 }
 .grid(@width, @total, @margin:0%){
     box-sizing: border-box;
@@ -88,10 +86,94 @@
   }
 }
 
+.fadecover(@size:3em, @index:1){
+.fade{
+		position: absolute;
+		height:100%;
+		width:@size;
+		top:0em;
+		z-index:@index;
+		&.top{
+			top: 0em;
+			 height: @size;
+			 width:100%;
+			 bottom: auto;
+			    left: 0em;
+			
+			background: fadeout(@palleteColor1, 100%);
+			background: -moz-linear-gradient(top, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, @palleteColor1), color-stop(100%, fadeout(@palleteColor1, 100%)));
+			background: -webkit-linear-gradient(top, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%);
+			background: -o-linear-gradient(top, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%);
+			background: -ms-linear-gradient(top,  @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%);
+			background: linear-gradient(to bottom, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
+		}
+		&.right{
+			right:0em;
+			 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+			background: -moz-linear-gradient(right,  @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(right,  @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to left, @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1,GradientType=1 ); /* IE6-9 */
+		}
+
+		&.left{
+			left: 0em;
+
+			 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+			background: -moz-linear-gradient(left,  @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1,GradientType=1 ); /* IE6-9 */
+		}
+
+		 &.bottom{
+			bottom: 0em;
+			 height: @size;
+			 width:100%;
+			 top: auto;
+			  left: 0em;
+
+			background: fadeout(@palleteColor1, 100%);
+			background: -moz-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, fadeout(@palleteColor1, 100%)), color-stop(100%, @palleteColor1));
+			background: -webkit-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+			background: -o-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+			background: -ms-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+			background: linear-gradient(to bottom, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
+		}
+
+		&.center{
+			top:1em;
+			bottom: 1em;
+			right: 1em;
+			left: 1em;
+
+			height: auto;
+			width: auto;
+
+			background: -moz-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+			background: -webkit-gradient(radial, center center, 0px, center center, 50%, color-stop(0%, @palleteColor1), color-stop(50%, fadeout(@palleteColor1, 100%)));
+			background: -webkit-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+			background: -o-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+			background: -ms-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+			background: radial-gradient(ellipse at center, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1, GradientType=1 );  
+		}
+
+		 &.cover{
+			 background-color: fadeout(@palleteColor1, 30%);
+			 width:100%;
+			 height:100%;
+			 left:0;
+			 top:0;
+		 }
+	}
+}
+
 body{
-     @media (max-width: 640px), (max-device-width: 640px){
-         padding-top: 4em;
-    }
     background-color: @palleteColor1;
     color:  @palleteColor2;
     
@@ -106,7 +188,7 @@ body{
         position: relative;
         
         h1, h2{
-            text-shadow: 0.2rem 0rem @palleteColor1;
+            text-shadow: @textShadow;
         }
         
         h1{
@@ -136,74 +218,7 @@ body{
             overflow:hidden;
             z-index:-1;
         }
-         .fade{
-            position: absolute;
-            height:100%;
-            width:10em;
-            top:0em;
-            z-index:-1;
-
-            &.right{
-                right:0em;
-                 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
-                background: -moz-linear-gradient(right,  @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%); /* FF3.6-15 */
-                background: -webkit-linear-gradient(right,  @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to left, @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1,GradientType=1 ); /* IE6-9 */
-            }
-
-            &.left{
-                left: 0em;
-
-                 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
-                background: -moz-linear-gradient(left,  @palleteColor1 0%, fadeout(@palleteColor1, 100%) 100%); /* FF3.6-15 */
-                background: -webkit-linear-gradient(left,  @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to right, @palleteColor1 0%,fadeout(@palleteColor1, 100%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1,GradientType=1 ); /* IE6-9 */
-            }
-
-             &.bottom{
-                bottom: 0em;
-                 height: 6em;
-                 width:100%;
-                 top: auto;
-
-                background: fadeout(@palleteColor1, 100%);
-                background: -moz-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
-                background: -webkit-gradient(left top, left bottom, color-stop(0%, fadeout(@palleteColor1, 100%)), color-stop(100%, @palleteColor1));
-                background: -webkit-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
-                background: -o-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
-                background: -ms-linear-gradient(top, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
-                background: linear-gradient(to bottom, fadeout(@palleteColor1, 100%) 0%, @palleteColor1 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
-            }
-
-            &.center{
-                top:1em;
-                bottom: 1em;
-                right: 1em;
-                left: 1em;
-
-                height: auto;
-                width: auto;
-
-                background: -moz-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
-                background: -webkit-gradient(radial, center center, 0px, center center, 50%, color-stop(0%, @palleteColor1), color-stop(50%, fadeout(@palleteColor1, 100%)));
-                background: -webkit-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
-                background: -o-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
-                background: -ms-radial-gradient(center, ellipse cover, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
-                background: radial-gradient(ellipse at center, @palleteColor1 0%, fadeout(@palleteColor1, 100%) 50%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@palleteColor1, endColorstr=@palleteColor1, GradientType=1 );  
-            }
-             
-             &.cover{
-                 background-color: fadeout(@palleteColor1, 30%);
-                 width:100%;
-                 height:100%;
-                 left:0;
-                 top:0;
-             }
-        }
+         .fadecover(8em, -1);
 
 
          video{    
@@ -213,7 +228,7 @@ body{
             top: 0;
             
         }
-         @media (max-width: 640px), (max-device-width: 640px){
+         @media only screen and (max-device-width: 640px){
              video{
                  display:none;
             }
@@ -235,9 +250,12 @@ body{
             &:last-child {
                 margin-bottom: 1em;
             }
+			 @media only screen and (max-device-width: 640px){
+				 margin-bottom: @layoutUnit3;
+			}
         }
         
-       @media (max-width: 640px), (max-device-width: 640px){
+       @media only screen and (max-device-width: 640px){
                 padding: 0em;
         }
     }
@@ -301,12 +319,6 @@ body{
                 opacity: 1;
                 top:0em;
             }
-             @media (max-width: 640px), (max-device-width: 640px){
-                width: 25em;
-                height: 25em;
-                border-radius: 25em;
-            }
-            
         }
         
         &:before{
@@ -379,12 +391,10 @@ body{
         height:100%;
          opacity: 1;
     }
-    @media (max-width: 640px), (max-device-width: 640px){
+    @media only screen and (max-device-width: 640px){
         a{
             .f1();
         }
-            margin-top: -4em;
-         padding-top: 3em;
         text-align: center;
         &:after{
             opacity: 1;
@@ -429,7 +439,6 @@ body{
             h1{
                 margin-bottom: @layoutUnit2 / 2; 
             }
-            
         }
     }
     
@@ -446,7 +455,12 @@ body{
         line-height: 1.5em;
 
     }
-
+	@media only screen and (max-device-width: 640px){
+		padding:@layoutUnitStandard  @layoutUnit4;
+		header{
+			margin-bottom: @layoutUnitStandard;
+		}
+	}
 }
 
 
@@ -459,14 +473,14 @@ body{
         .grid(1, 1);
         float:left;
     }
-    @media (max-device-width: 320px), (max-width: 320px){
+    @media only screen and (max-device-width: 640px){
         .section1{
             .grid(1, 1);
         }
     }
 /*------------------ Media Queries for mobile devices ----------------------------------------------*/
  
-    @media (max-width: 640px){
+    @media only screen and (max-device-width: 640px){
       .section1{
             .grid(1, 1);
            .img-container{
@@ -475,7 +489,7 @@ body{
         }
        
     }
-    @media (max-width: 640px), (max-device-width: 640px){
+    @media only screen and (max-device-width: 640px){
          .section1{
            .img-container{
                 .grid(1, 3, @stretchUnitStandard);
@@ -487,17 +501,16 @@ body{
 .layout-2{
     .section1{
         .grid(1, 1);
-
     }
     .img1{
         .grid(1, 2);
         float:left;
-
     }
     .img2{
         .grid(1, 2);
          float:left;
-    }
+	}
+	
 }
 .layout-3{
     .section1{
@@ -507,4 +520,69 @@ body{
         .grid(1, 3);
         float:left; 
     }
+}
+
+.layout-4{
+	position:relative;
+	.section1{
+		.grid(1, 2);
+		background-color:transparent;
+		  color:@palleteColor3;
+			h1{
+			text-shadow: @textShadow;
+		}
+	}
+	
+	.ghostImg{
+		.fadecover(10em);
+		position:absolute;
+		left:30%;
+		right: 0;
+		top:0;
+		bottom:0;
+		z-index:-1;
+	
+		.img{
+			background-size: cover;
+    		background-position: center;
+		}
+		a, .img{
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:0;
+			top:0;
+		}
+	}
+	&.alt{
+		.section1{
+			float:right;
+		}
+		.ghostImg{
+			right:30%;
+		left: 0;
+		top:0;
+		bottom:0;
+		}
+	}
+	 @media only screen and (max-device-width: 640px){
+	  display: block;
+		 position:relative;
+	  .section1{
+			display: block;
+		  background-color:transparent;
+		  color:@palleteColor2;
+		  padding-bottom: 15em;
+		  width:100%;
+		}
+		 .ghostImg{
+			 .fadecover(5em);
+			 position:absolute;
+			 left:0;
+			 right:0;
+			 top:10em;
+			 bottom:0;
+			 z-index:-1;
+		 }
+	}
 }
