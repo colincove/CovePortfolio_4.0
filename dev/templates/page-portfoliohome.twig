@@ -1,0 +1,21 @@
+{% extends "templates/base.twig" %}
+{% block content %}
+<header>       
+    <div class="header-table">
+        <div>
+            <h1>{{ post.title }}</h1>
+            <h2>{{post.get_field('sub_title')}}</h2>
+        </div>
+    </div>
+    <div class="header-bg-container">
+         {% include ['templates/fade.twig'] %}
+        <video class="header-video" src="{{post.get_field('hero_video')['url']}}" loop="" autoplay=""></video>
+    </div>
+    <div class="fade center"></div>
+</header>
+<section class="main-section">
+	{% for project in projects %}
+		{% include ['templates/tease-project-'~post.post_type~'.twig', 'templates/tease-project.twig'] %}
+	{% endfor %}
+</section>
+{% endblock %}

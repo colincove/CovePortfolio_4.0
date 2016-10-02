@@ -1,0 +1,22 @@
+{% extends "templates/base.twig" %}
+{% block content %}
+<header>       
+    <div class="header-table">
+        <div>
+            <h1>{{ post.title }}</h1>
+            <h2>{{post.get_field('sub_title')}}</h2>
+        </div>
+    </div>
+    <div class="header-bg-container">
+        <div class="fade left"></div>
+        <div class="fade right"></div>
+        <div class="fade bottom"></div>
+        <div class="fade cover"></div>
+        <video class="header-video" src="{{post.get_field('hero_video')['url']}}" loop="" autoplay=""></video>
+    </div>
+    <div class="fade center"></div>
+</header>
+<section class="main-section">
+	{{ post.content }}
+</section>
+{% endblock %}

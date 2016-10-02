@@ -64,6 +64,15 @@
 .f4(){
     font-size: 1rem;
 }
+
+> h1, > h2, > h3, > h4, > h5, > h6, > h7{
+	font-weight: bold;
+}
+
+h1{
+	.f1();
+}
+
 .grid(@width, @total, @margin:0%){
     box-sizing: border-box;
     width: (@width / @total) * 100% - (@margin);
@@ -176,9 +185,9 @@
 body{
     background-color: @palleteColor1;
     color:  @palleteColor2;
+	line-height: 1.5em;
     
     font-family: 'Droid Sans', sans-serif;
-    background-color: @palleteColor1;
     
     > header{
         text-align: center;
@@ -193,6 +202,7 @@ body{
         
         h1{
             .f1();
+			font-weight: bold;
         }
         
         h2{
@@ -226,6 +236,7 @@ body{
             width:100%;
             z-index:-2;
             top: 0;
+			left: 0;
             
         }
          @media only screen and (max-device-width: 640px){
@@ -238,20 +249,37 @@ body{
         background-color: transparent;
 
         padding: @layoutUnit2 @layoutUnitStandard @layoutUnit2 @layoutUnitStandard;
-        
+		
+		> p, > h1, > h2, > h3, > h4, > h5, > h6, > h7, > div{
+			max-width: 55em;
+		}
+		
+		> p, > h1, > h2, > h3, > h4, > h5, > h6, > h7{
+			margin: @layoutUnit2 auto @layoutUnit2 auto;
+		}
+		
+		> h1, > h2, > h3, > h4, > h5, > h6, > h7{
+			text-align: center;
+			text-shadow: @textShadow;
+		}
+		
+		> p{
+			padding: 0 @layoutUnit3;
+			box-sizing: border-box;
+		}
+		
         > div{
             border-top-right-radius: 0.1em;
             border-top-left-radius: 0.1em;
             overflow:hidden;
-            margin: auto;
-            max-width: 55em;
-            margin-bottom: @layoutUnit1;
-            
-            &:last-child {
-                margin-bottom: 1em;
-            }
+			margin: @layoutUnit1 auto @layoutUnit1 auto;
+			
 			 @media only screen and (max-device-width: 640px){
 				 margin-bottom: @layoutUnit3;
+			}
+			
+			&:first-child{
+				margin-top: 0;
 			}
         }
         
@@ -287,7 +315,6 @@ body{
     
     footer{
         position:relative;
-        background-image: url(../img/coverphoto.jpg);
         background-size:cover;
          & > .table{
              position:absolute;
@@ -307,7 +334,6 @@ body{
             position: relative;
             width: 12em;
             height: 12em;
-            background-image: url(../img/portrait02.jpg);
             background-size: cover;
             border-radius: 12em;
             margin: auto;
@@ -401,7 +427,6 @@ body{
             height:100%;
         }
     }
-    
 }
 .back-btn{
     border-radius: 0.2em;
@@ -432,6 +457,7 @@ body{
         
          h1{
             .f1();
+			 font-weight: bold;
         }
         
         &.withBtn{
@@ -512,7 +538,7 @@ body{
 	}
 	
 }
-.layout-3{
+.layout-0{
     .section1{
         .grid(1, 1);
     }
@@ -522,7 +548,7 @@ body{
     }
 }
 
-.layout-4{
+.layout-3{
 	position:relative;
 	.section1{
 		.grid(1, 2);
@@ -554,15 +580,15 @@ body{
 			top:0;
 		}
 	}
-	&.alt{
+	&.align-1{
 		.section1{
 			float:right;
 		}
 		.ghostImg{
 			right:30%;
-		left: 0;
-		top:0;
-		bottom:0;
+			left: 0;
+			top:0;
+			bottom:0;
 		}
 	}
 	 @media only screen and (max-device-width: 640px){

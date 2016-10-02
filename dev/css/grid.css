@@ -1,0 +1,349 @@
+
+[class*='col-']{
+	float: left;
+}
+[class*='col-'].padded{
+	padding: 0% 2%;
+}
+
+.col-1of4{
+		width: 25%;
+}
+.col-2of4{
+	width: 50%;
+}
+.col-3of4{
+	width: 75%;
+}
+.col-4of4{
+	width:	100%;
+}
+
+.col-1of4.padded{
+	width: 21%;
+}
+.col-2of4.padded{
+	width: 46%;
+}
+.col-3of4.padded{
+	width: 71%;
+}
+.col-4of4.padded{
+	width: 96%;
+}
+
+.col-1of7{
+		width: 14.285714%;
+}
+.col-2of7{
+	width: 28.571429%;
+}
+.col-3of7{
+	width: 42.857143%;
+}
+.col-4of7{
+	width: 57.142857%;
+}
+.col-5of7{
+	width: 71.428571%;
+}
+.col-6of7{
+	width: 85.714286%;
+}
+.col-7of7{
+	width: 100%;
+}
+.col-1of7.padded{
+	width: 10.285714%;
+}
+.col-2of7.padded{
+	width: 24.571429%;
+}
+.col-3of7.padded{
+	width: 38.857143%;
+}
+.col-4of7.padded{
+	width: 53.142857%;
+}
+.col-5of7.padded{
+	width: 67.428571%;
+}
+.col-6of7.padded{
+	width: 81.714286%;
+}
+.col-7of7.padded{
+	width: 96%;
+}
+
+
+.col-1of6{
+		width: 16.6666666666667%;
+}
+.col-2of6{
+	width: 33.33333333333%;
+}
+.col-3of6{
+	width: 50%;
+}
+.col-4of6{
+	width: 66.666666666667%;
+}
+.col-5of6{
+	width: 83.33333333333%;
+}
+.col-6of6{
+	width: 100%;
+}
+.col-1of6.padded{
+	width: 12.6666666666667%;
+}
+.col-2of6.padded{
+	width: 29.33333333333%;
+}
+.col-3of6.padded{
+	width: 46%;
+}
+.col-4of6.padded{
+	width: 62.666666666667%;
+}
+.col-5of6.padded{
+	width: 79.33333333333%;
+}
+.col-6of6.padded{
+	width: 96%;
+}
+
+
+.col-1of5{
+		width: 20%;
+}
+.col-2of5{
+	width: 40%;
+}
+.col-3of5{
+	width: 60%;
+}
+.col-4of5{
+	width: 80%;
+}
+.col-5of5{
+	width: 100%;
+}
+.col-1of5.padded{
+	width: 16%;
+}
+.col-2of5.padded{
+	width: 36%;
+}
+.col-3of5.padded{
+	width: 56%;
+}
+.col-4of5.padded{
+	width: 76%;
+}
+.col-5of5.padded{
+	width: 96%;
+}
+
+.col-1of3{
+	width: 33.333333333333%;
+}
+.col-2of3{
+	width: 66.666666666666%;
+}
+.col-3of3{
+	width: 100%;
+}
+.col-1of3.padded{
+	width: 29.333333333333%;
+}
+.col-2of3.padded{
+	width: 62.666666666666%;
+}
+.col-3of3.padded{
+	width: 96%;
+}
+.col-1of2{
+	width: 50%;
+}
+.col-2of2{
+	width: 100%;
+}
+.col-1of2.padded{
+	width: 46%;
+}
+.col-2of2.padded{
+	width: 96%;
+}
+@media  (max-width: 900px) {
+
+
+}
+@media  (max-width: 664px) {
+ /*Iphone portrait and smaller*/
+ 	.col-3of5{
+		width: 100%;
+	}
+	.col-3of5.padded{
+		width: 96%;
+	}
+	.col-1of3.padded{
+		width: 46%;
+	}
+	.col-1of2{
+		width: 100%;
+	}
+	.col-2of2{
+		width: 100%;
+	}
+		.col-1of2.padded{
+		width: 96%;
+	}
+	.col-2of2.padded{
+		width: 96%;
+	}
+}
+@media  (max-width: 540px) {
+
+}
+@media (max-width: 480px)  {
+	.col-1of5.padded{
+		width: 96%;
+	}
+	.col-2of5.padded{
+		width: 96%;
+	}
+	.col-3of5.padded{
+		width: 96%;
+	}
+	.col-4of5.padded{
+		width: 96%;
+	}
+	.col-5of5.padded{
+		width: 96%;
+	}
+	.col-1of5{
+		width: 100%;
+	}
+	.col-2of5{
+		width: 100%;
+	}
+	.col-3of5{
+		width: 100%;
+	}
+	.col-4of5{
+		width: 100%;
+	}
+	.col-5of5{
+		width: 100%;
+	}
+	.col-1of3.padded{
+		width: 96%;
+	}
+	.col-1of4{
+		width: 100%;
+	}
+	.col-2of4{
+		width: 100%;
+	}
+	.col-3of4{
+		width: 100%;
+	}
+	.col-4of4{
+		width:	100%;
+	}
+
+	.col-1of4.padded{
+		width: 96%;
+	}
+	.col-2of4.padded{
+		width: 96%;
+	}
+	.col-3of4.padded{
+		width: 96%;
+	}
+	.col-4of4.padded{
+		width: 96%;
+	}
+
+	.col-1of7{
+			width: 100%;
+	}
+	.col-2of7{
+		width: 100%;
+	}
+	.col-3of7{
+		width: 100%;
+	}
+	.col-4of7{
+		width: 100%;
+	}
+	.col-5of7{
+		width: 100%;
+	}
+	.col-6of7{
+		width: 100%;
+	}
+	.col-7of7{
+		width: 100%;
+	}
+	.col-1of7.padded{
+		width: 96%;
+	}
+	.col-2of7.padded{
+		width: 96%;
+	}
+	.col-3of7.padded{
+		width: 96%;
+	}
+	.col-4of7.padded{
+		width: 96%;
+	}
+	.col-5of7.padded{
+		width: 96%;
+	}
+	.col-6of7.padded{
+		width: 96%;
+	}
+	.col-7of7.padded{
+		width: 96%;
+	}
+
+
+	.col-1of6{
+			width: 100%;
+	}
+	.col-2of6{
+		width: 100%;
+	}
+	.col-3of6{
+		width: 100%;
+	}
+	.col-4of6{
+		width: 100%;
+	}
+	.col-5of6{
+		width: 100%;
+	}
+	.col-6of6{
+		width: 100%;
+	}
+	.col-1of6.padded{
+		width: 96%;
+	}
+	.col-2of6.padded{
+		width: 96%;
+	}
+	.col-3of6.padded{
+		width: 46%;
+	}
+	.col-4of6.padded{
+		width: 96%;
+	}
+	.col-5of6.padded{
+		width: 96%;
+	}
+	.col-6of6.padded{
+		width: 96%;
+	}
+}
