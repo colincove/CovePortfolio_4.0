@@ -1,0 +1,1 @@
+mklink /D C:\xampp\htdocs\CovePortfolio_4.0\dev\wordpress\wp-content\themes\CoveBlogTheme C:\xampp\htdocs\CovePortfolio_4.0\dev\CovePortfolioTheme
