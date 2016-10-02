@@ -14,8 +14,8 @@
     <div class="fade center"></div>
 </header>
 <section class="main-section">
-	{% for project in projects %}
-		{% include ['templates/tease-project-'~post.post_type~'.twig', 'templates/tease-project.twig'] %}
+	{% for post in posts %}
+		{% include ['templates/tease-'~post.post_type~'.twig'] %}
 	{% endfor %}
 </section>
 {% endblock %}

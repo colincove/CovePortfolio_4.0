@@ -92,6 +92,3 @@ add_action('print_media_templates', function(){
 
 });
 ?>
-
-
-

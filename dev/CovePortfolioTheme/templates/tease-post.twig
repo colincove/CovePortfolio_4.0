@@ -1,1 +1,10 @@
-<h2 class="h2"><a href="{{project.link}}">{{project.title}}</a></h2>
+<div class="layout-1">
+	<div class="section1">
+		<header class="withBtn">
+			<h1>{{post.title}}</h1>
+			 <a class="btn" href="{{post.link}}">View Project</a>
+		</header>
+		<p>{{post.get_field('tease_text')}} </p>
+	</div>
+	<div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="{{post.thumbnail.src}}"><div class="img fifa" style="background-image: url('{{post.thumbnail.src}}')"></div></a></div>
+</div>

@@ -1,10 +1,23 @@
 <?php
+
+add_action( 'customize_register', 'mytheme_customize_register' );
+add_action( 'wp_head', 'cove_customize_css');
+
 function mytheme_customize_register( $wp_customize ) {
- $wp_customize->add_section( 'starter_new_section_name' , array(
+	
+	/*-------------------------------------------------------------
+	SECTIONS-------------------------------------------------------
+	--------------------------------------------------------------*/
+	
+ 	$wp_customize->add_section( 'starter_new_section_name' , array(
         'title'    => __( 'Visible Section Name', 'starter' ),
         'priority' => 30
-    ) );   
-
+    ) );  
+	
+	/*-------------------------------------------------------------
+	SETTINGS-------------------------------------------------------
+	--------------------------------------------------------------*/
+	
     $wp_customize->add_setting( 'primary_site_color' , array(
         'default'   => '0e3330',
         'transport' => 'refresh',
@@ -24,7 +37,11 @@ function mytheme_customize_register( $wp_customize ) {
         'default'   => get_template_directory_uri().'/img/portrait02.jpg',
         'transport' => 'refresh',
     ) );
-
+	
+	/*-------------------------------------------------------------
+	CONTROLS-------------------------------------------------------
+	--------------------------------------------------------------*/
+	
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
         'label'    => __( 'Primary Color', 'starter' ),
         'section'  => 'colors',
