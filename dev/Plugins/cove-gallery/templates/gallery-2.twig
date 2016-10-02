@@ -1,0 +1,12 @@
+{% extends "templates/base.twig" %}
+{% block content %}
+	{{content}}
+	{% for image in images|slice(2) %}
+  <div class="img-container img-mini first"> <a class="fancybox" rel="{{atts.title}}"  href="{{image.large}}"><div style="background-image:url('{{image.thumbnail}}')" class="img"></div></a></div>
+	{% endfor %}
+{% endblock %}
+
+{% block subcontent %}
+   <div class="img-container img-major img1"><a class="fancybox" rel="{{atts.title}}"  href="{{images[0].large}}"><div class="img" style="background-image:url('{{images[0].medium}}')"></div></a></div>
+<div class="img-container img-major img1"><a class="fancybox" rel="{{atts.title}}"  href="{{images[1].large}}"><div class="img" style="background-image:url('{{images[1].medium}}')"></div></a></div>
+{% endblock %}
