@@ -38,6 +38,11 @@ function mytheme_customize_register( $wp_customize ) {
         'transport' => 'refresh',
     ) );
 	
+	$wp_customize->add_setting( 'resume_pdf' , array(
+        'default'   => get_template_directory_uri().'/media/resume.pdf',
+        'transport' => 'refresh',
+    ) );
+	
 	/*-------------------------------------------------------------
 	CONTROLS-------------------------------------------------------
 	--------------------------------------------------------------*/
@@ -72,6 +77,17 @@ function mytheme_customize_register( $wp_customize ) {
                'label'      => __( 'Upload a cover photo', 'starter' ),
                'section'    => 'colors',
                'settings'   => 'cover_photo'
+           )
+       )
+   );
+	$wp_customize->add_control(
+       new WP_Customize_Upload_Control(
+           $wp_customize,
+           'resume',
+           array(
+               'label'      => __( 'Upload your resume', 'starter' ),
+               'section'    => 'colors',
+               'settings'   => 'resume_pdf'
            )
        )
    );
