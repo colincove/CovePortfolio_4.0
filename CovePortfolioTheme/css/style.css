@@ -10,6 +10,7 @@
 }
 h1 {
   font-size: 2rem;
+  line-height: 3rem;
 }
 body {
   background-color: #0e3330;
@@ -30,6 +31,7 @@ body > header h2 {
 }
 body > header h1 {
   font-size: 2rem;
+  line-height: 3rem;
   font-weight: bold;
 }
 body > header h2 {
@@ -150,6 +152,7 @@ body > header video {
 }
 body > section {
   background-color: transparent;
+  overflow: hidden;
   padding: 4rem 2rem 4rem 2rem;
 }
 body > section > p,
@@ -201,10 +204,28 @@ body > section > div {
 body > section > div:first-child {
   margin-top: 0;
 }
-@media only screen and (max-device-width: 640px) {
+@media (max-width: 640px) {
   body > section {
     padding: 0em;
   }
+}
+body > section > ul {
+  overflow: hidden;
+}
+body > section > ul > li {
+  background-color: #96b0b2;
+  border-top-right-radius: 0.1em;
+  border-top-left-radius: 0.1em;
+  margin-bottom: 1rem;
+}
+body > section > ul > li > ul {
+  padding-left: 1rem;
+}
+body > section > ul > li > ul > li {
+  list-style: square;
+}
+body > section > ul > li h1 {
+  margin-bottom: 1rem;
 }
 body .img-minor {
   position: relative;
@@ -380,12 +401,9 @@ body footer > .table:after {
   height: 100%;
   opacity: 1;
 }
-@media only screen and (max-device-width: 640px) {
+@media only screen and (max-width: 640px) {
   .nav-container {
     text-align: center;
-  }
-  .nav-container a {
-    font-size: 2rem;
   }
   .nav-container:after {
     opacity: 1;
@@ -422,6 +440,7 @@ body footer > .table:after {
 }
 [class*="layout-"] [class*="section"] header h1 {
   font-size: 2rem;
+  line-height: 3rem;
   font-weight: bold;
 }
 [class*="layout-"] [class*="section"] header.withBtn {
@@ -633,7 +652,19 @@ body footer > .table:after {
   top: 0;
   bottom: 0;
 }
-@media only screen and (max-device-width: 640px) {
+.layout-3.align-2 .section1 {
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  width: 100%;
+  margin-bottom: 20em;
+}
+.layout-3.align-2 .ghostImg {
+  left: 0;
+  right: 0;
+  top: 15em;
+}
+@media (max-width: 640px) {
   .layout-3 {
     display: block;
     position: relative;

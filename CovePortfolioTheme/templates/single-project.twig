@@ -6,7 +6,7 @@
             <h1>{{ post.title }}</h1>
             <h2>{{post.get_field('sub_title')}}</h2>
         </div>
-    </div>
+	</div>
     <div class="header-bg-container">
         <div class="fade left"></div>
         <div class="fade right"></div>
@@ -17,6 +17,22 @@
     <div class="fade center"></div>
 </header>
 <section class="main-section">
+	{% if post.get_field('pitch') and post.get_field('collaborators') and post.get_field('tech') %}
+	<ul class="flex-group">
+		<li class="col-1of3 padded margined">
+			<h1>Pitch</h1>
+			<p>{{post.get_field('pitch')}}</p>
+		</li>
+		<li class="col-1of3 padded margined">
+			<h1>Collaborators</h1>
+			<p>{{post.get_field('collaborators')}}</p>
+		</li>
+		<li class="col-1of3 padded margined">
+			<h1>Tech</h1>
+			<p>{{post.get_field('tech')}}</p>
+		</li>
+	</ul>
+	{% endif %}
 	{{ post.content }}
 </section>
 {% endblock %}

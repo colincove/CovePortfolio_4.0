@@ -53,6 +53,7 @@ add_action('print_media_templates', function(){
       <select data-setting="align">
         <option value="0"> Left </option>
         <option value="1"> Right </option>
+		<option value="2"> Center </option>
       </select>
     </label>
 	<label class="setting">
