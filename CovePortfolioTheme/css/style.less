@@ -253,6 +253,33 @@ body{
 		overflow: hidden;
         padding: @layoutUnit2 @layoutUnitStandard @layoutUnit2 @layoutUnitStandard;
 		
+		> img, a > img, > p > a > img, , > p > img {
+			height:auto;
+			
+			&.alignnone{
+				float: none;
+			}
+			&.alignleft{
+				float: left;
+			}
+			&.alignright{
+				float: right;
+			}
+			&.aligncenter{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			&.size-small{
+				width: 30%;
+			}
+			&.size-medium{
+				width: 50%;
+			}
+			&, &.size-large{
+				width: 100%;
+			}
+		}
+		
 		> p, > h1, > h2, > h3, > h4, > h5, > h6, > h7, > div{
 			max-width: 55em;
 		}

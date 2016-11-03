@@ -155,6 +155,50 @@ body > section {
   overflow: hidden;
   padding: 4rem 2rem 4rem 2rem;
 }
+body > section > img,
+body > section a > img,
+body > section > p > a > img {
+  height: auto;
+}
+body > section > img.alignnone,
+body > section a > img.alignnone,
+body > section > p > a > img.alignnone {
+  float: none;
+}
+body > section > img.alignleft,
+body > section a > img.alignleft,
+body > section > p > a > img.alignleft {
+  float: left;
+}
+body > section > img.alignright,
+body > section a > img.alignright,
+body > section > p > a > img.alignright {
+  float: right;
+}
+body > section > img.aligncenter,
+body > section a > img.aligncenter,
+body > section > p > a > img.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+body > section > img.size-small,
+body > section a > img.size-small,
+body > section > p > a > img.size-small {
+  width: 30%;
+}
+body > section > img.size-medium,
+body > section a > img.size-medium,
+body > section > p > a > img.size-medium {
+  width: 50%;
+}
+body > section > img,
+body > section a > img,
+body > section > p > a > img,
+body > section > img.size-large,
+body > section a > img.size-large,
+body > section > p > a > img.size-large {
+  width: 100%;
+}
 body > section > p,
 body > section > h1,
 body > section > h2,
