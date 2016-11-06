@@ -64,6 +64,10 @@ add_action('print_media_templates', function(){
       <span><?php _e('Caption'); ?></span>
 	  <textarea data-setting="caption"/>
     </label>
+	<label class="setting">
+      <span><?php _e('Solid'); ?></span>
+	  <input data-setting="solid" type="checkbox">
+    </label>
   </script>
 
   <script>
@@ -76,7 +80,8 @@ add_action('print_media_templates', function(){
         type: '0', 
 		  title: 'Gallery',
 		  caption: '', 
-		  align: 0
+		  align: 0, 
+		  solid: false
       });
 
       // merge default gallery settings template with yours
