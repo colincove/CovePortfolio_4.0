@@ -1,0 +1,70 @@
+
+@palleteColor1: #0E3330;
+@palleteColor2: #F7FCFD;//white
+@palleteColor3: #E5E5E5;//grey
+@palleteColor4: #3E4949;//light teal 
+@palleteColor5: #061716;//darker teal
+@palleteColor6: #96B0B2;
+
+@palleteColor6Fade: rgba(150, 176,178, 1);
+
+@textShadow:-0.1rem 0.1rem @palleteColor5;
+
+.PanelBase(@color, @contentColor, @secondaryContentColor, @borderColor){
+    background-color: @color; 
+    color: @contentColor;
+    
+    .secondary{
+        color: @secondaryContentColor;
+    }
+}
+
+.Panel01(){
+    .PanelBase(fadeout(@palleteColor1, 30%), @palleteColor2, @palleteColor2, @palleteColor1);
+}
+
+.Panel02(){
+    .PanelBase(@palleteColor1, white, white, @palleteColor1);
+}
+ 
+.Panel03(){
+    .PanelBase(@palleteColor1, black, black, black);
+}
+
+.Panel04(){
+    .PanelBase(@palleteColor3, @palleteColor4, @palleteColor1, @palleteColor1);
+}
+
+.flexbox(){
+	display: flex;
+}
+
+.flex(@flex){
+	flex: @flex;
+}
+
+@layoutUnit1: 8rem;
+@layoutUnit2: 4rem;
+@layoutUnit3: 2rem;
+@layoutUnit4: 1rem;
+@layoutUnit5: 0.5rem;
+
+@layoutUnitStandard: @layoutUnit3;
+
+@stretchUnitStandard: 2%;
+
+.f1(){
+    font-size: 2rem;
+	line-height: 3rem;
+}
+.f2(){
+    font-size: 1.5rem;
+}
+.f3(){
+    font-size: 1rem;
+	line-height: 1rem;
+}
+.f4(){
+    font-size: 1rem;
+	line-height: 3rem;
+}

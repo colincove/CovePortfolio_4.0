@@ -36,6 +36,7 @@ body > header h1 {
 }
 body > header h2 {
   font-size: 1rem;
+  line-height: 1rem;
 }
 body > header > .header-table {
   display: table;
@@ -157,46 +158,55 @@ body > section {
 }
 body > section > img,
 body > section a > img,
-body > section > p > a > img {
+body > section > p > a > img,
+body > section > p > img {
   height: auto;
 }
 body > section > img.alignnone,
 body > section a > img.alignnone,
-body > section > p > a > img.alignnone {
+body > section > p > a > img.alignnone,
+body > section > p > img.alignnone {
   float: none;
 }
 body > section > img.alignleft,
 body > section a > img.alignleft,
-body > section > p > a > img.alignleft {
+body > section > p > a > img.alignleft,
+body > section > p > img.alignleft {
   float: left;
 }
 body > section > img.alignright,
 body > section a > img.alignright,
-body > section > p > a > img.alignright {
+body > section > p > a > img.alignright,
+body > section > p > img.alignright {
   float: right;
 }
 body > section > img.aligncenter,
 body > section a > img.aligncenter,
-body > section > p > a > img.aligncenter {
+body > section > p > a > img.aligncenter,
+body > section > p > img.aligncenter {
   margin-left: auto;
   margin-right: auto;
 }
 body > section > img.size-small,
 body > section a > img.size-small,
-body > section > p > a > img.size-small {
+body > section > p > a > img.size-small,
+body > section > p > img.size-small {
   width: 30%;
 }
 body > section > img.size-medium,
 body > section a > img.size-medium,
-body > section > p > a > img.size-medium {
+body > section > p > a > img.size-medium,
+body > section > p > img.size-medium {
   width: 50%;
 }
 body > section > img,
 body > section a > img,
 body > section > p > a > img,
+body > section > p > img,
 body > section > img.size-large,
 body > section a > img.size-large,
-body > section > p > a > img.size-large {
+body > section > p > a > img.size-large,
+body > section > p > img.size-large {
   width: 100%;
 }
 body > section > p,
@@ -207,7 +217,8 @@ body > section > h4,
 body > section > h5,
 body > section > h6,
 body > section > h7,
-body > section > div {
+body > section > div,
+body > section > ul {
   max-width: 55em;
 }
 body > section > p,
@@ -255,21 +266,31 @@ body > section > div:first-child {
 }
 body > section > ul {
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding: 0;
 }
 body > section > ul > li {
-  background-color: #96b0b2;
+  background-color: #e5e5e5;
+  color: #3e4949;
+  box-shadow: 0.2rem 0.2rem #061716;
   border-top-right-radius: 0.1em;
   border-top-left-radius: 0.1em;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
-body > section > ul > li > ul {
-  padding-left: 1rem;
-}
-body > section > ul > li > ul > li {
-  list-style: square;
+body > section > ul > li .secondary {
+  color: #0e3330;
 }
 body > section > ul > li h1 {
   margin-bottom: 1rem;
+}
+@media (max-width: 340px) {
+  body > section > ul > li h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 body .img-minor {
   position: relative;
@@ -325,7 +346,7 @@ body .img-epic {
 }
 body .img-container {
   box-sizing: border-box;
-  border: 0.2rem solid #e5e5e5;
+  border: 0.2rem solid #3e4949;
 }
 body .img-container .img {
   background-size: cover;
@@ -409,6 +430,7 @@ body footer > .table:after {
 }
 .nav-container {
   z-index: 10;
+  top: 0;
   width: 100%;
   position: fixed;
   padding: 1rem;
@@ -420,6 +442,7 @@ body footer > .table:after {
 }
 .nav-container a {
   font-size: 1rem;
+  line-height: 3rem;
   padding-right: 2rem;
   color: #96b0b2;
   text-decoration: none;
@@ -469,13 +492,22 @@ body footer > .table:after {
 .btn:hover {
   background-color: #0e3330;
 }
-[class*="layout-"] [class*="section"] {
+.home [class*="layout-"] [class*="section"] {
   background-color: #e5e5e5;
   color: #3e4949;
+}
+.home [class*="layout-"] [class*="section"] .secondary {
+  color: #0e3330;
+}
+[class*="layout-"] [class*="section"] {
   padding: 4rem 2rem;
   float: left;
 }
-[class*="layout-"] [class*="section"] .secondary {
+[class*="layout-"] [class*="section"].solid {
+  background-color: #e5e5e5;
+  color: #3e4949;
+}
+[class*="layout-"] [class*="section"].solid .secondary {
   color: #0e3330;
 }
 [class*="layout-"] [class*="section"] header {
@@ -502,6 +534,7 @@ body footer > .table:after {
 }
 [class*="layout-"] [class*="section"] p {
   font-size: 1rem;
+  line-height: 3rem;
   line-height: 1.5em;
 }
 @media only screen and (max-device-width: 640px) {

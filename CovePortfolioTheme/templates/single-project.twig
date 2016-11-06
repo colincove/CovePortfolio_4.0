@@ -18,7 +18,7 @@
 </header>
 <section class="main-section">
 	{% if post.get_field('pitch') and post.get_field('collaborators') and post.get_field('tech') %}
-	<ul class="flex-group">
+	<ul class="flex-row">
 		<li class="col-1of3 padded margined">
 			<h1>Pitch</h1>
 			<p>{{post.get_field('pitch')}}</p>

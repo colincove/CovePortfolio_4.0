@@ -37,9 +37,7 @@ add_action( 'wp_enqueue_scripts', 'cove_scripts_basic' );
 function cove_styles_with_the_lot()
 {
     // Register the style like this for a theme:
-    wp_register_style( 'cove-general-style', get_template_directory_uri() . '/css/style.css', array(), '20120208', 'all' );
-    wp_register_style( 'cove-grid', get_template_directory_uri() . '/css/grid.css', array(), '20120208', 'all' );
-    wp_register_style( 'cove-reset', get_template_directory_uri() . '/css/reset.css', array(), '20120208', 'all' );
+    wp_register_style( 'cove-general-style', get_template_directory_uri() . '/css/all.min.css', array(), '20120208', 'all' );
  
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'cove-reset' );
