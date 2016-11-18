@@ -124,6 +124,11 @@ body{
     
     font-family: 'Droid Sans', sans-serif;
     
+	strong{
+		text-shadow: @textShadow;
+		color: @palleteColor7;
+	}
+	
     > header{
         text-align: center;
         height: 20em;
@@ -162,6 +167,9 @@ body{
             bottom:-15em;
             overflow:hidden;
             z-index:-1;
+			
+			background-size: cover;
+			background-position: center;
         }
          .fadecover(8em, -1);
 
@@ -183,9 +191,10 @@ body{
     > section{
         background-color: transparent;
 		overflow: hidden;
-        padding: @layoutUnit2 @layoutUnitStandard @layoutUnit2 @layoutUnitStandard;
+        padding: @layoutUnit2 0 @layoutUnit2 0;
 		> img, a > img, > p > a > img, > p > img {
 			height:auto;
+			display: block;
 			
 			&.alignnone{
 				float: none;
@@ -457,13 +466,14 @@ body{
    
     .img-container{
         .grid(1, 6, @stretchUnitStandard);
-        margin-top: @layoutUnitStandard;
+        margin-bottom: @layoutUnitStandard;
         margin-right: @stretchUnitStandard;
         float: left;
     }
     
     p{
         .f4();
+		margin-bottom: @layoutUnitStandard;
         line-height: 1.5em;
 
     }
@@ -530,7 +540,10 @@ body{
     }
     .img1, .img2, .img3{
         .grid(1, 3);
-        float:left; 
+        float:left;
+		.img{
+			background-position: center;
+		}
     }
 }
 

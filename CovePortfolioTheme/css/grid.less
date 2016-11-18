@@ -1,4 +1,5 @@
 .row, .flex-row{
+	overflow:hidden;
 	[class*='col-']{
 		box-sizing: border-box;
 	}
@@ -7,7 +8,7 @@
 			padding: @padding;
 		}
 		.col-@{j}of@{columns}.margined{
-			margin: @margin;
+			margin: @margin / 2;
 		}
 		.generate-columns(@padding, @margin, @columns, (@j+1));
 	}
@@ -40,6 +41,9 @@
 			}
 			.col-@{j}of@{columns}.padded{
 				width: calc(100% ~" - " @padding);
+			}
+			.col-@{j}of@{columns}.margined{
+				width: calc(100% ~" - " @margin);
 			}
 			.col-@{j}of@{columns}.margined.padded{
 				width: calc(100% ~" - " (@margin+@padding));
@@ -76,6 +80,9 @@
 			}
 			.col-@{j}of@{columns}.padded{
 				flex-basis: calc(100% ~" - " @padding);
+			}
+			.col-@{j}of@{columns}.margined{
+				flex-basis: calc(100% ~" - " @margin);
 			}
 			.col-@{j}of@{columns}.margined.padded{
 				flex-basis: calc(100% ~" - " (@margin+@padding));
