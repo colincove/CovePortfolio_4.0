@@ -135,13 +135,19 @@ table {
 .flex-row [class*='col-'] {
   box-sizing: border-box;
 }
+.row img[class*='col-'],
+.flex-row img[class*='col-'],
+.row a img[class*='col-'],
+.flex-row a img[class*='col-'] {
+  height: auto;
+}
 .row .col-1of1.padded,
 .flex-row .col-1of1.padded {
   padding: 0.5rem;
 }
 .row .col-1of1.margined,
 .flex-row .col-1of1.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-1of2.padded,
 .flex-row .col-1of2.padded {
@@ -149,7 +155,7 @@ table {
 }
 .row .col-1of2.margined,
 .flex-row .col-1of2.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-2of2.padded,
 .flex-row .col-2of2.padded {
@@ -157,7 +163,7 @@ table {
 }
 .row .col-2of2.margined,
 .flex-row .col-2of2.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-1of3.padded,
 .flex-row .col-1of3.padded {
@@ -165,7 +171,7 @@ table {
 }
 .row .col-1of3.margined,
 .flex-row .col-1of3.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-2of3.padded,
 .flex-row .col-2of3.padded {
@@ -173,7 +179,7 @@ table {
 }
 .row .col-2of3.margined,
 .flex-row .col-2of3.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-3of3.padded,
 .flex-row .col-3of3.padded {
@@ -181,7 +187,7 @@ table {
 }
 .row .col-3of3.margined,
 .flex-row .col-3of3.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-1of4.padded,
 .flex-row .col-1of4.padded {
@@ -189,7 +195,7 @@ table {
 }
 .row .col-1of4.margined,
 .flex-row .col-1of4.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-2of4.padded,
 .flex-row .col-2of4.padded {
@@ -197,7 +203,7 @@ table {
 }
 .row .col-2of4.margined,
 .flex-row .col-2of4.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-3of4.padded,
 .flex-row .col-3of4.padded {
@@ -205,7 +211,7 @@ table {
 }
 .row .col-3of4.margined,
 .flex-row .col-3of4.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-4of4.padded,
 .flex-row .col-4of4.padded {
@@ -213,7 +219,7 @@ table {
 }
 .row .col-4of4.margined,
 .flex-row .col-4of4.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-1of5.padded,
 .flex-row .col-1of5.padded {
@@ -221,7 +227,7 @@ table {
 }
 .row .col-1of5.margined,
 .flex-row .col-1of5.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-2of5.padded,
 .flex-row .col-2of5.padded {
@@ -229,7 +235,7 @@ table {
 }
 .row .col-2of5.margined,
 .flex-row .col-2of5.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-3of5.padded,
 .flex-row .col-3of5.padded {
@@ -237,7 +243,7 @@ table {
 }
 .row .col-3of5.margined,
 .flex-row .col-3of5.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-4of5.padded,
 .flex-row .col-4of5.padded {
@@ -245,7 +251,7 @@ table {
 }
 .row .col-4of5.margined,
 .flex-row .col-4of5.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-5of5.padded,
 .flex-row .col-5of5.padded {
@@ -253,7 +259,7 @@ table {
 }
 .row .col-5of5.margined,
 .flex-row .col-5of5.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-1of6.padded,
 .flex-row .col-1of6.padded {
@@ -261,7 +267,7 @@ table {
 }
 .row .col-1of6.margined,
 .flex-row .col-1of6.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-2of6.padded,
 .flex-row .col-2of6.padded {
@@ -269,7 +275,7 @@ table {
 }
 .row .col-2of6.margined,
 .flex-row .col-2of6.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-3of6.padded,
 .flex-row .col-3of6.padded {
@@ -277,7 +283,7 @@ table {
 }
 .row .col-3of6.margined,
 .flex-row .col-3of6.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-4of6.padded,
 .flex-row .col-4of6.padded {
@@ -285,7 +291,7 @@ table {
 }
 .row .col-4of6.margined,
 .flex-row .col-4of6.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-5of6.padded,
 .flex-row .col-5of6.padded {
@@ -293,7 +299,7 @@ table {
 }
 .row .col-5of6.margined,
 .flex-row .col-5of6.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-6of6.padded,
 .flex-row .col-6of6.padded {
@@ -301,7 +307,7 @@ table {
 }
 .row .col-6of6.margined,
 .flex-row .col-6of6.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-1of7.padded,
 .flex-row .col-1of7.padded {
@@ -309,7 +315,7 @@ table {
 }
 .row .col-1of7.margined,
 .flex-row .col-1of7.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-2of7.padded,
 .flex-row .col-2of7.padded {
@@ -317,7 +323,7 @@ table {
 }
 .row .col-2of7.margined,
 .flex-row .col-2of7.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-3of7.padded,
 .flex-row .col-3of7.padded {
@@ -325,7 +331,7 @@ table {
 }
 .row .col-3of7.margined,
 .flex-row .col-3of7.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-4of7.padded,
 .flex-row .col-4of7.padded {
@@ -333,7 +339,7 @@ table {
 }
 .row .col-4of7.margined,
 .flex-row .col-4of7.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-5of7.padded,
 .flex-row .col-5of7.padded {
@@ -341,7 +347,7 @@ table {
 }
 .row .col-5of7.margined,
 .flex-row .col-5of7.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-6of7.padded,
 .flex-row .col-6of7.padded {
@@ -349,7 +355,7 @@ table {
 }
 .row .col-6of7.margined,
 .flex-row .col-6of7.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row .col-7of7.padded,
 .flex-row .col-7of7.padded {
@@ -357,7 +363,7 @@ table {
 }
 .row .col-7of7.margined,
 .flex-row .col-7of7.margined {
-  margin: 0.25rem;
+  margin: 0.5rem;
 }
 .row [class*='col-'] {
   float: left;
@@ -369,10 +375,10 @@ table {
   width: calc(100%  -  0.5rem);
 }
 .row .col-1of1.margined {
-  width: calc(100%  -  0.5rem);
+  width: calc(100%  -  1rem);
 }
 .row .col-1of1.margined.padded {
-  width: calc(100%  -  1rem);
+  width: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-1of1 {
@@ -382,10 +388,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-1of1.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-1of1.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-1of2 {
@@ -395,10 +401,10 @@ table {
   width: calc(50%  -  0.5rem);
 }
 .row .col-1of2.margined {
-  width: calc(50%  -  0.5rem);
+  width: calc(50%  -  1rem);
 }
 .row .col-1of2.margined.padded {
-  width: calc(50%  -  1rem);
+  width: calc(50%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-1of2 {
@@ -408,10 +414,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-1of2.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-1of2.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-2of2 {
@@ -421,10 +427,10 @@ table {
   width: calc(100%  -  0.5rem);
 }
 .row .col-2of2.margined {
-  width: calc(100%  -  0.5rem);
+  width: calc(100%  -  1rem);
 }
 .row .col-2of2.margined.padded {
-  width: calc(100%  -  1rem);
+  width: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-2of2 {
@@ -434,10 +440,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-2of2.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-2of2.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-1of3 {
@@ -447,10 +453,10 @@ table {
   width: calc(33.33333333%  -  0.5rem);
 }
 .row .col-1of3.margined {
-  width: calc(33.33333333%  -  0.5rem);
+  width: calc(33.33333333%  -  1rem);
 }
 .row .col-1of3.margined.padded {
-  width: calc(33.33333333%  -  1rem);
+  width: calc(33.33333333%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-1of3 {
@@ -460,10 +466,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-1of3.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-1of3.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-2of3 {
@@ -473,10 +479,10 @@ table {
   width: calc(66.66666667%  -  0.5rem);
 }
 .row .col-2of3.margined {
-  width: calc(66.66666667%  -  0.5rem);
+  width: calc(66.66666667%  -  1rem);
 }
 .row .col-2of3.margined.padded {
-  width: calc(66.66666667%  -  1rem);
+  width: calc(66.66666667%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-2of3 {
@@ -486,10 +492,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-2of3.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-2of3.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-3of3 {
@@ -499,10 +505,10 @@ table {
   width: calc(100%  -  0.5rem);
 }
 .row .col-3of3.margined {
-  width: calc(100%  -  0.5rem);
+  width: calc(100%  -  1rem);
 }
 .row .col-3of3.margined.padded {
-  width: calc(100%  -  1rem);
+  width: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-3of3 {
@@ -512,10 +518,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-3of3.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-3of3.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-1of4 {
@@ -525,10 +531,10 @@ table {
   width: calc(25%  -  0.5rem);
 }
 .row .col-1of4.margined {
-  width: calc(25%  -  0.5rem);
+  width: calc(25%  -  1rem);
 }
 .row .col-1of4.margined.padded {
-  width: calc(25%  -  1rem);
+  width: calc(25%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-1of4 {
@@ -538,10 +544,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-1of4.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-1of4.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-2of4 {
@@ -551,10 +557,10 @@ table {
   width: calc(50%  -  0.5rem);
 }
 .row .col-2of4.margined {
-  width: calc(50%  -  0.5rem);
+  width: calc(50%  -  1rem);
 }
 .row .col-2of4.margined.padded {
-  width: calc(50%  -  1rem);
+  width: calc(50%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-2of4 {
@@ -564,10 +570,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-2of4.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-2of4.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-3of4 {
@@ -577,10 +583,10 @@ table {
   width: calc(75%  -  0.5rem);
 }
 .row .col-3of4.margined {
-  width: calc(75%  -  0.5rem);
+  width: calc(75%  -  1rem);
 }
 .row .col-3of4.margined.padded {
-  width: calc(75%  -  1rem);
+  width: calc(75%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-3of4 {
@@ -590,10 +596,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-3of4.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-3of4.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-4of4 {
@@ -603,10 +609,10 @@ table {
   width: calc(100%  -  0.5rem);
 }
 .row .col-4of4.margined {
-  width: calc(100%  -  0.5rem);
+  width: calc(100%  -  1rem);
 }
 .row .col-4of4.margined.padded {
-  width: calc(100%  -  1rem);
+  width: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-4of4 {
@@ -616,10 +622,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-4of4.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-4of4.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-1of5 {
@@ -629,10 +635,10 @@ table {
   width: calc(20%  -  0.5rem);
 }
 .row .col-1of5.margined {
-  width: calc(20%  -  0.5rem);
+  width: calc(20%  -  1rem);
 }
 .row .col-1of5.margined.padded {
-  width: calc(20%  -  1rem);
+  width: calc(20%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-1of5 {
@@ -642,10 +648,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-1of5.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-1of5.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-2of5 {
@@ -655,10 +661,10 @@ table {
   width: calc(40%  -  0.5rem);
 }
 .row .col-2of5.margined {
-  width: calc(40%  -  0.5rem);
+  width: calc(40%  -  1rem);
 }
 .row .col-2of5.margined.padded {
-  width: calc(40%  -  1rem);
+  width: calc(40%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-2of5 {
@@ -668,10 +674,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-2of5.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-2of5.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-3of5 {
@@ -681,10 +687,10 @@ table {
   width: calc(60%  -  0.5rem);
 }
 .row .col-3of5.margined {
-  width: calc(60%  -  0.5rem);
+  width: calc(60%  -  1rem);
 }
 .row .col-3of5.margined.padded {
-  width: calc(60%  -  1rem);
+  width: calc(60%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-3of5 {
@@ -694,10 +700,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-3of5.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-3of5.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-4of5 {
@@ -707,10 +713,10 @@ table {
   width: calc(80%  -  0.5rem);
 }
 .row .col-4of5.margined {
-  width: calc(80%  -  0.5rem);
+  width: calc(80%  -  1rem);
 }
 .row .col-4of5.margined.padded {
-  width: calc(80%  -  1rem);
+  width: calc(80%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-4of5 {
@@ -720,10 +726,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-4of5.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-4of5.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-5of5 {
@@ -733,10 +739,10 @@ table {
   width: calc(100%  -  0.5rem);
 }
 .row .col-5of5.margined {
-  width: calc(100%  -  0.5rem);
+  width: calc(100%  -  1rem);
 }
 .row .col-5of5.margined.padded {
-  width: calc(100%  -  1rem);
+  width: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-5of5 {
@@ -746,10 +752,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-5of5.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-5of5.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-1of6 {
@@ -759,10 +765,10 @@ table {
   width: calc(16.66666667%  -  0.5rem);
 }
 .row .col-1of6.margined {
-  width: calc(16.66666667%  -  0.5rem);
+  width: calc(16.66666667%  -  1rem);
 }
 .row .col-1of6.margined.padded {
-  width: calc(16.66666667%  -  1rem);
+  width: calc(16.66666667%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-1of6 {
@@ -772,10 +778,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-1of6.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-1of6.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-2of6 {
@@ -785,10 +791,10 @@ table {
   width: calc(33.33333333%  -  0.5rem);
 }
 .row .col-2of6.margined {
-  width: calc(33.33333333%  -  0.5rem);
+  width: calc(33.33333333%  -  1rem);
 }
 .row .col-2of6.margined.padded {
-  width: calc(33.33333333%  -  1rem);
+  width: calc(33.33333333%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-2of6 {
@@ -798,10 +804,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-2of6.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-2of6.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-3of6 {
@@ -811,10 +817,10 @@ table {
   width: calc(50%  -  0.5rem);
 }
 .row .col-3of6.margined {
-  width: calc(50%  -  0.5rem);
+  width: calc(50%  -  1rem);
 }
 .row .col-3of6.margined.padded {
-  width: calc(50%  -  1rem);
+  width: calc(50%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-3of6 {
@@ -824,10 +830,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-3of6.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-3of6.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-4of6 {
@@ -837,10 +843,10 @@ table {
   width: calc(66.66666667%  -  0.5rem);
 }
 .row .col-4of6.margined {
-  width: calc(66.66666667%  -  0.5rem);
+  width: calc(66.66666667%  -  1rem);
 }
 .row .col-4of6.margined.padded {
-  width: calc(66.66666667%  -  1rem);
+  width: calc(66.66666667%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-4of6 {
@@ -850,10 +856,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-4of6.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-4of6.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-5of6 {
@@ -863,10 +869,10 @@ table {
   width: calc(83.33333333%  -  0.5rem);
 }
 .row .col-5of6.margined {
-  width: calc(83.33333333%  -  0.5rem);
+  width: calc(83.33333333%  -  1rem);
 }
 .row .col-5of6.margined.padded {
-  width: calc(83.33333333%  -  1rem);
+  width: calc(83.33333333%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-5of6 {
@@ -876,10 +882,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-5of6.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-5of6.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-6of6 {
@@ -889,10 +895,10 @@ table {
   width: calc(100%  -  0.5rem);
 }
 .row .col-6of6.margined {
-  width: calc(100%  -  0.5rem);
+  width: calc(100%  -  1rem);
 }
 .row .col-6of6.margined.padded {
-  width: calc(100%  -  1rem);
+  width: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-6of6 {
@@ -902,10 +908,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-6of6.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-6of6.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-1of7 {
@@ -915,10 +921,10 @@ table {
   width: calc(14.28571429%  -  0.5rem);
 }
 .row .col-1of7.margined {
-  width: calc(14.28571429%  -  0.5rem);
+  width: calc(14.28571429%  -  1rem);
 }
 .row .col-1of7.margined.padded {
-  width: calc(14.28571429%  -  1rem);
+  width: calc(14.28571429%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-1of7 {
@@ -928,10 +934,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-1of7.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-1of7.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-2of7 {
@@ -941,10 +947,10 @@ table {
   width: calc(28.57142857%  -  0.5rem);
 }
 .row .col-2of7.margined {
-  width: calc(28.57142857%  -  0.5rem);
+  width: calc(28.57142857%  -  1rem);
 }
 .row .col-2of7.margined.padded {
-  width: calc(28.57142857%  -  1rem);
+  width: calc(28.57142857%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-2of7 {
@@ -954,10 +960,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-2of7.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-2of7.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-3of7 {
@@ -967,10 +973,10 @@ table {
   width: calc(42.85714286%  -  0.5rem);
 }
 .row .col-3of7.margined {
-  width: calc(42.85714286%  -  0.5rem);
+  width: calc(42.85714286%  -  1rem);
 }
 .row .col-3of7.margined.padded {
-  width: calc(42.85714286%  -  1rem);
+  width: calc(42.85714286%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-3of7 {
@@ -980,10 +986,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-3of7.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-3of7.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-4of7 {
@@ -993,10 +999,10 @@ table {
   width: calc(57.14285714%  -  0.5rem);
 }
 .row .col-4of7.margined {
-  width: calc(57.14285714%  -  0.5rem);
+  width: calc(57.14285714%  -  1rem);
 }
 .row .col-4of7.margined.padded {
-  width: calc(57.14285714%  -  1rem);
+  width: calc(57.14285714%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-4of7 {
@@ -1006,10 +1012,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-4of7.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-4of7.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-5of7 {
@@ -1019,10 +1025,10 @@ table {
   width: calc(71.42857143%  -  0.5rem);
 }
 .row .col-5of7.margined {
-  width: calc(71.42857143%  -  0.5rem);
+  width: calc(71.42857143%  -  1rem);
 }
 .row .col-5of7.margined.padded {
-  width: calc(71.42857143%  -  1rem);
+  width: calc(71.42857143%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-5of7 {
@@ -1032,10 +1038,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-5of7.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-5of7.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-6of7 {
@@ -1045,10 +1051,10 @@ table {
   width: calc(85.71428571%  -  0.5rem);
 }
 .row .col-6of7.margined {
-  width: calc(85.71428571%  -  0.5rem);
+  width: calc(85.71428571%  -  1rem);
 }
 .row .col-6of7.margined.padded {
-  width: calc(85.71428571%  -  1rem);
+  width: calc(85.71428571%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-6of7 {
@@ -1058,10 +1064,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-6of7.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-6of7.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .row .col-7of7 {
@@ -1071,10 +1077,10 @@ table {
   width: calc(100%  -  0.5rem);
 }
 .row .col-7of7.margined {
-  width: calc(100%  -  0.5rem);
+  width: calc(100%  -  1rem);
 }
 .row .col-7of7.margined.padded {
-  width: calc(100%  -  1rem);
+  width: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .row .col-7of7 {
@@ -1084,10 +1090,10 @@ table {
     width: calc(100%  -  0.5rem);
   }
   .row .col-7of7.margined {
-    width: calc(100%  -  0.5rem);
+    width: calc(100%  -  1rem);
   }
   .row .col-7of7.margined.padded {
-    width: calc(100%  -  1rem);
+    width: calc(100%  -  1.5rem);
   }
 }
 .flex-row {
@@ -1101,10 +1107,10 @@ table {
   flex-basis: calc(100%  -  0.5rem);
 }
 .flex-row .col-1of1.margined {
-  flex-basis: calc(100%  -  0.5rem);
+  flex-basis: calc(100%  -  1rem);
 }
 .flex-row .col-1of1.margined.padded {
-  flex-basis: calc(100%  -  1rem);
+  flex-basis: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-1of1 {
@@ -1114,10 +1120,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-1of1.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-1of1.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-1of2 {
@@ -1127,10 +1133,10 @@ table {
   flex-basis: calc(50%  -  0.5rem);
 }
 .flex-row .col-1of2.margined {
-  flex-basis: calc(50%  -  0.5rem);
+  flex-basis: calc(50%  -  1rem);
 }
 .flex-row .col-1of2.margined.padded {
-  flex-basis: calc(50%  -  1rem);
+  flex-basis: calc(50%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-1of2 {
@@ -1140,10 +1146,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-1of2.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-1of2.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-2of2 {
@@ -1153,10 +1159,10 @@ table {
   flex-basis: calc(100%  -  0.5rem);
 }
 .flex-row .col-2of2.margined {
-  flex-basis: calc(100%  -  0.5rem);
+  flex-basis: calc(100%  -  1rem);
 }
 .flex-row .col-2of2.margined.padded {
-  flex-basis: calc(100%  -  1rem);
+  flex-basis: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-2of2 {
@@ -1166,10 +1172,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-2of2.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-2of2.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-1of3 {
@@ -1179,10 +1185,10 @@ table {
   flex-basis: calc(33.33333333%  -  0.5rem);
 }
 .flex-row .col-1of3.margined {
-  flex-basis: calc(33.33333333%  -  0.5rem);
+  flex-basis: calc(33.33333333%  -  1rem);
 }
 .flex-row .col-1of3.margined.padded {
-  flex-basis: calc(33.33333333%  -  1rem);
+  flex-basis: calc(33.33333333%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-1of3 {
@@ -1192,10 +1198,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-1of3.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-1of3.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-2of3 {
@@ -1205,10 +1211,10 @@ table {
   flex-basis: calc(66.66666667%  -  0.5rem);
 }
 .flex-row .col-2of3.margined {
-  flex-basis: calc(66.66666667%  -  0.5rem);
+  flex-basis: calc(66.66666667%  -  1rem);
 }
 .flex-row .col-2of3.margined.padded {
-  flex-basis: calc(66.66666667%  -  1rem);
+  flex-basis: calc(66.66666667%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-2of3 {
@@ -1218,10 +1224,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-2of3.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-2of3.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-3of3 {
@@ -1231,10 +1237,10 @@ table {
   flex-basis: calc(100%  -  0.5rem);
 }
 .flex-row .col-3of3.margined {
-  flex-basis: calc(100%  -  0.5rem);
+  flex-basis: calc(100%  -  1rem);
 }
 .flex-row .col-3of3.margined.padded {
-  flex-basis: calc(100%  -  1rem);
+  flex-basis: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-3of3 {
@@ -1244,10 +1250,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-3of3.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-3of3.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-1of4 {
@@ -1257,10 +1263,10 @@ table {
   flex-basis: calc(25%  -  0.5rem);
 }
 .flex-row .col-1of4.margined {
-  flex-basis: calc(25%  -  0.5rem);
+  flex-basis: calc(25%  -  1rem);
 }
 .flex-row .col-1of4.margined.padded {
-  flex-basis: calc(25%  -  1rem);
+  flex-basis: calc(25%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-1of4 {
@@ -1270,10 +1276,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-1of4.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-1of4.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-2of4 {
@@ -1283,10 +1289,10 @@ table {
   flex-basis: calc(50%  -  0.5rem);
 }
 .flex-row .col-2of4.margined {
-  flex-basis: calc(50%  -  0.5rem);
+  flex-basis: calc(50%  -  1rem);
 }
 .flex-row .col-2of4.margined.padded {
-  flex-basis: calc(50%  -  1rem);
+  flex-basis: calc(50%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-2of4 {
@@ -1296,10 +1302,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-2of4.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-2of4.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-3of4 {
@@ -1309,10 +1315,10 @@ table {
   flex-basis: calc(75%  -  0.5rem);
 }
 .flex-row .col-3of4.margined {
-  flex-basis: calc(75%  -  0.5rem);
+  flex-basis: calc(75%  -  1rem);
 }
 .flex-row .col-3of4.margined.padded {
-  flex-basis: calc(75%  -  1rem);
+  flex-basis: calc(75%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-3of4 {
@@ -1322,10 +1328,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-3of4.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-3of4.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-4of4 {
@@ -1335,10 +1341,10 @@ table {
   flex-basis: calc(100%  -  0.5rem);
 }
 .flex-row .col-4of4.margined {
-  flex-basis: calc(100%  -  0.5rem);
+  flex-basis: calc(100%  -  1rem);
 }
 .flex-row .col-4of4.margined.padded {
-  flex-basis: calc(100%  -  1rem);
+  flex-basis: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-4of4 {
@@ -1348,10 +1354,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-4of4.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-4of4.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-1of5 {
@@ -1361,10 +1367,10 @@ table {
   flex-basis: calc(20%  -  0.5rem);
 }
 .flex-row .col-1of5.margined {
-  flex-basis: calc(20%  -  0.5rem);
+  flex-basis: calc(20%  -  1rem);
 }
 .flex-row .col-1of5.margined.padded {
-  flex-basis: calc(20%  -  1rem);
+  flex-basis: calc(20%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-1of5 {
@@ -1374,10 +1380,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-1of5.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-1of5.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-2of5 {
@@ -1387,10 +1393,10 @@ table {
   flex-basis: calc(40%  -  0.5rem);
 }
 .flex-row .col-2of5.margined {
-  flex-basis: calc(40%  -  0.5rem);
+  flex-basis: calc(40%  -  1rem);
 }
 .flex-row .col-2of5.margined.padded {
-  flex-basis: calc(40%  -  1rem);
+  flex-basis: calc(40%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-2of5 {
@@ -1400,10 +1406,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-2of5.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-2of5.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-3of5 {
@@ -1413,10 +1419,10 @@ table {
   flex-basis: calc(60%  -  0.5rem);
 }
 .flex-row .col-3of5.margined {
-  flex-basis: calc(60%  -  0.5rem);
+  flex-basis: calc(60%  -  1rem);
 }
 .flex-row .col-3of5.margined.padded {
-  flex-basis: calc(60%  -  1rem);
+  flex-basis: calc(60%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-3of5 {
@@ -1426,10 +1432,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-3of5.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-3of5.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-4of5 {
@@ -1439,10 +1445,10 @@ table {
   flex-basis: calc(80%  -  0.5rem);
 }
 .flex-row .col-4of5.margined {
-  flex-basis: calc(80%  -  0.5rem);
+  flex-basis: calc(80%  -  1rem);
 }
 .flex-row .col-4of5.margined.padded {
-  flex-basis: calc(80%  -  1rem);
+  flex-basis: calc(80%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-4of5 {
@@ -1452,10 +1458,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-4of5.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-4of5.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-5of5 {
@@ -1465,10 +1471,10 @@ table {
   flex-basis: calc(100%  -  0.5rem);
 }
 .flex-row .col-5of5.margined {
-  flex-basis: calc(100%  -  0.5rem);
+  flex-basis: calc(100%  -  1rem);
 }
 .flex-row .col-5of5.margined.padded {
-  flex-basis: calc(100%  -  1rem);
+  flex-basis: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-5of5 {
@@ -1478,10 +1484,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-5of5.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-5of5.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-1of6 {
@@ -1491,10 +1497,10 @@ table {
   flex-basis: calc(16.66666667%  -  0.5rem);
 }
 .flex-row .col-1of6.margined {
-  flex-basis: calc(16.66666667%  -  0.5rem);
+  flex-basis: calc(16.66666667%  -  1rem);
 }
 .flex-row .col-1of6.margined.padded {
-  flex-basis: calc(16.66666667%  -  1rem);
+  flex-basis: calc(16.66666667%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-1of6 {
@@ -1504,10 +1510,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-1of6.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-1of6.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-2of6 {
@@ -1517,10 +1523,10 @@ table {
   flex-basis: calc(33.33333333%  -  0.5rem);
 }
 .flex-row .col-2of6.margined {
-  flex-basis: calc(33.33333333%  -  0.5rem);
+  flex-basis: calc(33.33333333%  -  1rem);
 }
 .flex-row .col-2of6.margined.padded {
-  flex-basis: calc(33.33333333%  -  1rem);
+  flex-basis: calc(33.33333333%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-2of6 {
@@ -1530,10 +1536,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-2of6.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-2of6.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-3of6 {
@@ -1543,10 +1549,10 @@ table {
   flex-basis: calc(50%  -  0.5rem);
 }
 .flex-row .col-3of6.margined {
-  flex-basis: calc(50%  -  0.5rem);
+  flex-basis: calc(50%  -  1rem);
 }
 .flex-row .col-3of6.margined.padded {
-  flex-basis: calc(50%  -  1rem);
+  flex-basis: calc(50%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-3of6 {
@@ -1556,10 +1562,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-3of6.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-3of6.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-4of6 {
@@ -1569,10 +1575,10 @@ table {
   flex-basis: calc(66.66666667%  -  0.5rem);
 }
 .flex-row .col-4of6.margined {
-  flex-basis: calc(66.66666667%  -  0.5rem);
+  flex-basis: calc(66.66666667%  -  1rem);
 }
 .flex-row .col-4of6.margined.padded {
-  flex-basis: calc(66.66666667%  -  1rem);
+  flex-basis: calc(66.66666667%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-4of6 {
@@ -1582,10 +1588,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-4of6.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-4of6.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-5of6 {
@@ -1595,10 +1601,10 @@ table {
   flex-basis: calc(83.33333333%  -  0.5rem);
 }
 .flex-row .col-5of6.margined {
-  flex-basis: calc(83.33333333%  -  0.5rem);
+  flex-basis: calc(83.33333333%  -  1rem);
 }
 .flex-row .col-5of6.margined.padded {
-  flex-basis: calc(83.33333333%  -  1rem);
+  flex-basis: calc(83.33333333%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-5of6 {
@@ -1608,10 +1614,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-5of6.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-5of6.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-6of6 {
@@ -1621,10 +1627,10 @@ table {
   flex-basis: calc(100%  -  0.5rem);
 }
 .flex-row .col-6of6.margined {
-  flex-basis: calc(100%  -  0.5rem);
+  flex-basis: calc(100%  -  1rem);
 }
 .flex-row .col-6of6.margined.padded {
-  flex-basis: calc(100%  -  1rem);
+  flex-basis: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-6of6 {
@@ -1634,10 +1640,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-6of6.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-6of6.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-1of7 {
@@ -1647,10 +1653,10 @@ table {
   flex-basis: calc(14.28571429%  -  0.5rem);
 }
 .flex-row .col-1of7.margined {
-  flex-basis: calc(14.28571429%  -  0.5rem);
+  flex-basis: calc(14.28571429%  -  1rem);
 }
 .flex-row .col-1of7.margined.padded {
-  flex-basis: calc(14.28571429%  -  1rem);
+  flex-basis: calc(14.28571429%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-1of7 {
@@ -1660,10 +1666,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-1of7.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-1of7.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-2of7 {
@@ -1673,10 +1679,10 @@ table {
   flex-basis: calc(28.57142857%  -  0.5rem);
 }
 .flex-row .col-2of7.margined {
-  flex-basis: calc(28.57142857%  -  0.5rem);
+  flex-basis: calc(28.57142857%  -  1rem);
 }
 .flex-row .col-2of7.margined.padded {
-  flex-basis: calc(28.57142857%  -  1rem);
+  flex-basis: calc(28.57142857%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-2of7 {
@@ -1686,10 +1692,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-2of7.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-2of7.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-3of7 {
@@ -1699,10 +1705,10 @@ table {
   flex-basis: calc(42.85714286%  -  0.5rem);
 }
 .flex-row .col-3of7.margined {
-  flex-basis: calc(42.85714286%  -  0.5rem);
+  flex-basis: calc(42.85714286%  -  1rem);
 }
 .flex-row .col-3of7.margined.padded {
-  flex-basis: calc(42.85714286%  -  1rem);
+  flex-basis: calc(42.85714286%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-3of7 {
@@ -1712,10 +1718,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-3of7.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-3of7.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-4of7 {
@@ -1725,10 +1731,10 @@ table {
   flex-basis: calc(57.14285714%  -  0.5rem);
 }
 .flex-row .col-4of7.margined {
-  flex-basis: calc(57.14285714%  -  0.5rem);
+  flex-basis: calc(57.14285714%  -  1rem);
 }
 .flex-row .col-4of7.margined.padded {
-  flex-basis: calc(57.14285714%  -  1rem);
+  flex-basis: calc(57.14285714%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-4of7 {
@@ -1738,10 +1744,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-4of7.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-4of7.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-5of7 {
@@ -1751,10 +1757,10 @@ table {
   flex-basis: calc(71.42857143%  -  0.5rem);
 }
 .flex-row .col-5of7.margined {
-  flex-basis: calc(71.42857143%  -  0.5rem);
+  flex-basis: calc(71.42857143%  -  1rem);
 }
 .flex-row .col-5of7.margined.padded {
-  flex-basis: calc(71.42857143%  -  1rem);
+  flex-basis: calc(71.42857143%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-5of7 {
@@ -1764,10 +1770,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-5of7.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-5of7.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-6of7 {
@@ -1777,10 +1783,10 @@ table {
   flex-basis: calc(85.71428571%  -  0.5rem);
 }
 .flex-row .col-6of7.margined {
-  flex-basis: calc(85.71428571%  -  0.5rem);
+  flex-basis: calc(85.71428571%  -  1rem);
 }
 .flex-row .col-6of7.margined.padded {
-  flex-basis: calc(85.71428571%  -  1rem);
+  flex-basis: calc(85.71428571%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-6of7 {
@@ -1790,10 +1796,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-6of7.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-6of7.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
 .flex-row .col-7of7 {
@@ -1803,10 +1809,10 @@ table {
   flex-basis: calc(100%  -  0.5rem);
 }
 .flex-row .col-7of7.margined {
-  flex-basis: calc(100%  -  0.5rem);
+  flex-basis: calc(100%  -  1rem);
 }
 .flex-row .col-7of7.margined.padded {
-  flex-basis: calc(100%  -  1rem);
+  flex-basis: calc(100%  -  1.5rem);
 }
 @media (max-width: 640px) {
   .flex-row .col-7of7 {
@@ -1816,10 +1822,10 @@ table {
     flex-basis: calc(100%  -  0.5rem);
   }
   .flex-row .col-7of7.margined {
-    flex-basis: calc(100%  -  0.5rem);
+    flex-basis: calc(100%  -  1rem);
   }
   .flex-row .col-7of7.margined.padded {
-    flex-basis: calc(100%  -  1rem);
+    flex-basis: calc(100%  -  1.5rem);
   }
 }
  > h1,

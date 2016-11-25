@@ -3,6 +3,9 @@
 	[class*='col-']{
 		box-sizing: border-box;
 	}
+	img[class*='col-'], a img[class*='col-']{
+		height: auto;
+	}
 	.generate-columns(@padding: 0, @margin: 0, @columns: 1, @j:1) when (@j<=@columns){
 		.col-@{j}of@{columns}.padded{
 			padding: @padding;
@@ -16,7 +19,7 @@
 		.generate-columns(@padding, @margin, @i+1);
 		.generate-grid(@padding, @margin, @grid, (@i+1));
 	}
-	.generate-grid(@layoutUnit5, @layoutUnit5, 7);
+	.generate-grid(@layoutUnit5, @layoutUnit4, 7);
 }
 .row {
 	[class*='col-']{
@@ -55,7 +58,7 @@
 		.generate-columns(@padding, @margin, @i+1);
 		.generate-grid(@padding, @margin, @grid, (@i+1));
 	}
-	.generate-grid(@layoutUnit5, @layoutUnit5, 7);
+	.generate-grid(@layoutUnit5, @layoutUnit4, 7);
 }
 
 .flex-row {
@@ -94,5 +97,5 @@
 		.generate-columns(@padding, @margin, @i+1);
 		.generate-grid(@padding, @margin, @grid, (@i+1));
 	}
-	.generate-grid(@layoutUnit5, @layoutUnit5, 7);
+	.generate-grid(@layoutUnit5, @layoutUnit4, 7);
 }
