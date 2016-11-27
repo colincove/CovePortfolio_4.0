@@ -1,9 +1,28 @@
-> h1, > h2, > h3, > h4, > h5, > h6, > h7{
-	font-weight: bold;
-}
 
 h1{
 	.f1();
+}
+
+p { margin-bottom: @layoutUnit5; }
+
+h2{
+	.f2();
+	margin: @layoutUnit3 0;
+}
+ul > li {
+	margin: @layoutUnit5 0;
+}
+ul{
+	list-style-type: disc;
+	padding-left: 1rem;
+}
+h3{
+	color: @palleteColor7;
+	margin: @layoutUnit4 0;
+}
+small{
+	font-style: italic;
+	.f4();
 }
 
 .grid(@width, @total, @margin:0%){
@@ -147,6 +166,7 @@ body{
         
         h2{
             .f3();
+			margin:  0;
         }
         
         & > .header-table{
@@ -156,7 +176,6 @@ body{
             & > div{
                 display: table-cell;
                 vertical-align: middle;
-                
             }
         }
         .header-bg-container{
@@ -169,7 +188,7 @@ body{
             z-index:-1;
 			
 			background-size: cover;
-			background-position: center;
+			background-position: left top;
         }
          .fadecover(8em, -1);
 
@@ -305,8 +324,28 @@ body{
     }
     
     footer{
+		 .icons{
+				 list-style-type: none;
+				
+    position: absolute;
+    left: 50%;
+    display: flex;
+    width: auto;
+    transform: translate(-50%, -50%);
+			 li{
+				 display:block; 
+				 float: left;
+				 margin: @layoutUnit3;
+				 
+				 img{
+					     width: 100%;
+    min-width: 3rem;
+				 }
+			 }
+			 }
         position:relative;
         background-size:cover;
+		background-position: center;
          & > .table{
              position:absolute;
              z-index:1;
@@ -331,12 +370,13 @@ body{
             opacity:0;
             transition: all 1s;
             top: 2em;
-            
+            /* TODO: Deicde if I am keeping this portrait 
             &.show{
                 opacity: 1;
                 top:0em;
-            }
+            } */
         }
+			
         
         &:before{
             z-index:-1;
@@ -433,7 +473,10 @@ body{
         background-color: @palleteColor1;
     }
 }
-
+.home header{
+	width: 100%;
+	max-width: none;
+}
 .home [class*="layout-"], [class*="layout-"].solid {
 	.box-shadow-01();
 	[class*="section"]{
@@ -442,7 +485,9 @@ body{
 	.img-container{
         border-color: @palleteColor3;
     }
+	
 }
+
 [class*="layout-"] [class*="section"] {
     padding:@layoutUnitStandard  @layoutUnitStandard;
     float: left;

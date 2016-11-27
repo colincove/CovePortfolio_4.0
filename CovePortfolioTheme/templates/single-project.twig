@@ -34,5 +34,29 @@
 	</ul>
 	{% endif %}
 	{{ post.content }}
+	<h1>See More</h1>
+	<div class="flex-row">
+		{% if next_post and prev_post %}
+		<div class="col-1of2 margined">
+			{% set vars = {'projectrender': prev_post, 'is_small': true} %}
+			{% include 'templates/tease-project.twig' with vars %}
+		</div>
+		<div class="col-1of2 margined">
+			{% set vars = {'projectrender': next_post,'is_small': true} %}
+			{% include 'templates/tease-project.twig' with vars %}
+		</div>
+		{% elseif next_post %}
+		<div class="col-1of1 margined">
+			{% set vars = {'projectrender': next_post,'is_small': true} %}
+			{% include 'templates/tease-project.twig' with vars %}
+		</div>
+		{% elseif prev_post %}
+		<div class="col-1of1 margined">
+			{% set vars = {'projectrender': prev_post,'is_small': true} %}
+			{% include 'templates/tease-project.twig' with vars %}
+		</div>
+		{% endif %}
+	</div>
+	
 </section>
 {% endblock %}

@@ -1828,17 +1828,31 @@ table {
     flex-basis: calc(100%  -  1.5rem);
   }
 }
- > h1,
- > h2,
- > h3,
- > h4,
- > h5,
- > h6,
- > h7 {
-  font-weight: bold;
-}
 h1 {
   font-size: 2rem;
+  line-height: 3rem;
+}
+p {
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+ul > li {
+  margin: 0.5rem 0;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+h3 {
+  color: #2df2af;
+  margin: 1rem 0;
+}
+small {
+  font-style: italic;
+  font-size: 0.85rem;
   line-height: 3rem;
 }
 body {
@@ -1870,6 +1884,7 @@ body > header h1 {
 body > header h2 {
   font-size: 1rem;
   line-height: 1rem;
+  margin: 0;
 }
 body > header > .header-table {
   display: table;
@@ -1889,7 +1904,7 @@ body > header .header-bg-container {
   overflow: hidden;
   z-index: -1;
   background-size: cover;
-  background-position: center;
+  background-position: left top;
 }
 body > header .fade {
   position: absolute;
@@ -2208,6 +2223,24 @@ body .img-mini .img {
 body footer {
   position: relative;
   background-size: cover;
+  background-position: center;
+}
+body footer .icons {
+  list-style-type: none;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  width: auto;
+  transform: translate(-50%, -50%);
+}
+body footer .icons li {
+  display: block;
+  float: left;
+  margin: 2rem;
+}
+body footer .icons li img {
+  width: 100%;
+  min-width: 3rem;
 }
 body footer > .table {
   position: absolute;
@@ -2231,10 +2264,11 @@ body footer > .table .portrait {
   opacity: 0;
   transition: all 1s;
   top: 2em;
-}
-body footer > .table .portrait.show {
-  opacity: 1;
-  top: 0em;
+  /* TODO: Deicde if I am keeping this portrait 
+            &.show{
+                opacity: 1;
+                top:0em;
+            } */
 }
 body footer > .table:before {
   z-index: -1;
@@ -2277,7 +2311,7 @@ body footer > .table:after {
   margin: auto;
 }
 .nav-container a {
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 3rem;
   padding-right: 2rem;
   color: #96b0b2;
@@ -2328,6 +2362,10 @@ body footer > .table:after {
 .btn:hover {
   background-color: #0e3330;
 }
+.home header {
+  width: 100%;
+  max-width: none;
+}
 .home [class*="layout-"],
 [class*="layout-"].solid {
   box-shadow: 0.2rem 0.2rem #061716;
@@ -2372,7 +2410,7 @@ body footer > .table:after {
   float: left;
 }
 [class*="layout-"] [class*="section"] p {
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 3rem;
   margin-bottom: 2rem;
   line-height: 1.5em;

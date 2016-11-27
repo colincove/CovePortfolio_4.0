@@ -1,10 +1,12 @@
-<div class="layout-1">
+<div class="layout-1 solid">
 	<div class="section1">
 		<header class="withBtn">
-			<h1>{{project.title}}</h1>
-			 <a class="btn" href="{{project.link}}">View Project</a>
+			<h1>{{projectrender.post_title}}</h1>
+			 <a class="btn" href="{{projectrender.link}}">View Project</a>
 		</header>
-		<p>{{project.get_field('tease_text')}} </p>
+		{% if not is_small %}
+		<p>{{projectrender.get_field('tease_text')}} </p>
+		{% endif %}
 	</div>
-	<div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="{{project.thumbnail.src}}"><div class="img fifa" style="background-image: url('{{project.thumbnail.src}}')"></div></a></div>
+	<div class="img-container img-major img1"><a class="fancybox" rel="draft"  href="{{projectrender.thumbnail.src}}"><div class="img fifa" style="background-image: url('{{projectrender.thumbnail.src}}')"></div></a></div>
 </div>

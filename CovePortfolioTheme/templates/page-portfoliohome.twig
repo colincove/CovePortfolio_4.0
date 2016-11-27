@@ -9,13 +9,22 @@
     </div>
     <div class="header-bg-container">
          {% include ['templates/fade.twig'] %}
-        <video class="header-video" src="{{post.get_field('hero_video')['url']}}" loop="" autoplay=""></video>
     </div>
     <div class="fade center"></div>
 </header>
 <section class="main-section">
+	
 	{% for project in projects %}
-		{% include ['templates/tease-project-'~post.post_type~'.twig', 'templates/tease-project.twig'] %}
+		{% set vars = {'projectrender': project} %}
+		{% include ['templates/tease-project-'~post.post_type~'.twig', 'templates/tease-project.twig'] with vars %}
 	{% endfor %}
+	<div class="flex-row">
+		{% for project in smallprojects %}
+		{% set vars = {'projectrender': project, 'is_small':true} %}
+			<div class="col-1of2 margined">
+				{% include ['templates/tease-project-'~post.post_type~'.twig', 'templates/tease-project.twig'] with vars %}
+			</div>
+		{% endfor %}
+	</div>
 </section>
 {% endblock %}

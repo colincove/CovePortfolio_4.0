@@ -8,6 +8,10 @@ function mytheme_customize_register( $wp_customize ) {
 	/*-------------------------------------------------------------
 	SECTIONS-------------------------------------------------------
 	--------------------------------------------------------------*/
+	$wp_customize->add_section( 'images' , array(
+        'title'    => __( 'Images', 'starter' ),
+        'priority' => 30
+    ) );  
 	
  	$wp_customize->add_section( 'starter_new_section_name' , array(
         'title'    => __( 'Visible Section Name', 'starter' ),
@@ -29,6 +33,11 @@ function mytheme_customize_register( $wp_customize ) {
     ) );
 	
 	$wp_customize->add_setting( 'background_image' , array(
+        'default'   => get_template_directory_uri().'/img/coverphoto.jpg',
+        'transport' => 'refresh',
+    ) );
+	
+	$wp_customize->add_setting( 'header_background_image' , array(
         'default'   => get_template_directory_uri().'/img/coverphoto.jpg',
         'transport' => 'refresh',
     ) );
@@ -72,6 +81,17 @@ function mytheme_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
        new WP_Customize_Image_Control(
            $wp_customize,
+           'header_background',
+           array(
+               'label'      => __( 'Upload a background photo for header', 'starter' ),
+               'section'    => 'images',
+               'settings'   => 'header_background_image'
+           )
+       )
+   );
+	$wp_customize->add_control(
+       new WP_Customize_Image_Control(
+           $wp_customize,
            'cover',
            array(
                'label'      => __( 'Upload a cover photo', 'starter' ),
@@ -106,6 +126,9 @@ function cove_customize_css()
 			 }
 			 .portrait { 
 				background-image: url('<?php echo get_theme_mod('cover_photo');?>'); 
+			 }
+			 body > header .header-bg-container{
+				 background-image: url('<?php echo get_theme_mod('header_background_image');?>');
 			 }
          </style>
     <?php

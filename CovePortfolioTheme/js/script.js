@@ -24,15 +24,32 @@ $(document).ready(function(e){
            resize();
         }, false);
     }
+	
+	resize();
+	
+	var scrollTimer;
 
     $window.scroll(function(e){
-        $headerVideo.css("top", $window.scrollTop() / 3);
+		if(!scrollTimer){
+			scrollTimer = setTimeout(scroll, 25);
+		}
+    });
+	
+    $window.resize(resize);
+	
+    function scroll(e){
+				$headerVideo.css("top", $window.scrollTop() / 3);
+
+		clearTimeout(scrollTimer);
+		scrollTimer = null;
+		
+		
+		//$headerContainer.css("background-position-y", $window.scrollTop() / 3);
         
         $navcontainer.toggleClass("scrolled", $mainsection.position().top < $window.scrollTop() + $navcontainer.height()  );
-        $portrait.toggleClass("show", $window.scrollTop() + $window.height() > $doc.height() - $window.height() * 0.2);
-    });
-    $window.resize(resize);
-    
+       $portrait.toggleClass("show", $window.scrollTop() + $window.height() > $doc.height() - $window.height() * 0.2);
+	}
+	
     function resize(e){
         var headerRatio = $headerContainer.width() / $headerContainer.height();
         var videoRatio = $headerVideo.width() / $headerVideo.height();
